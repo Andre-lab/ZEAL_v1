@@ -21,7 +21,8 @@ function [x,fval,exitflag,output,trials] = alignmentOptimization(ZCref, settings
                 
         [~, ZC_mom_list, ~, ~] = getZCmomFromShape(rot_shape,  ZCref.order, ZCref.grid_res, ZCref.scale_option, ZCref.chi_coeff_cell, ZCref.chi_nlm_rst_cell);
         
-        d = -1*real(corr((ZC_mom_list), (ZCref.mom_list)));
+        %d = -1*real(corr((ZC_mom_list), (ZCref.mom_list)));
+        d = -1*real(dot(ZC_mom_list, ZCref.mom_list)) / (norm(ZC_mom_list)*norm(ZCref.mom_list));
         
     end
 

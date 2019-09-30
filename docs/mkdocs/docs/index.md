@@ -1,16 +1,23 @@
-# . <img src="./images/zealLogo.png" height="100px"> 
+# <img src="./images/zealLogo.svg" height="100px"> <span style="color:white">.<\span>
 
 ## Shape-based molecular alignment
 
 ---
 
-## Overview
-ZEAL is an app that allows two molecules to be aligned based on their shape resemblance alone. This is done by projecting the shape onto 3D Zernike-Canterakis functions up to a specific order; the higher the order, the higher is the level of detail captured by the moments associated with the functions. ZEAL will find the optimalshape alignment by searching for the rotation that maximizes the correlation of these moments. 
+### What?
+ZEAL is an app that allows two molecules to be rotationally aligned based on their shape resemblance.
+
+### Why?
+Proteins with similar global shape are often functionally related, despite low sequence and backbone conformation similarity. Conventional structure alignment tools will often fail to generate relevant alignments in such cases. 
+
+### How?
+By projecting the protein shape onto 3D Zernike-Canterakis (ZC) functions, it is possible to extract varying levels of shape details in the moments associated with a set of ZC functions. ZEAL will find the optimal shape alignment by searching for the rotation that maximizes the correlation of these moments between two structures.
 
 
 ## Installation
 
-1. Download the ZEAL installer from [github.com/Andre-lab/ZEAL](https://github.com/Andre-lab/ZEAL/tree/master/installation/ZEALstandalone).
+1. Download the ZEAL installer from [github.com/Andre-lab/ZEAL](https://github.com/Andre-lab/ZEAL/tree/master/installation/ZEALstandalone) or at Filip´s Dropbox: https://www.dropbox.com/s/idoyz4bl1kbt7cs/ZEAL_web_installer.zip?dl=0
+
    The installer will download the [MATLAB-runtime](https://se.mathworks.com/products/compiler/matlab-runtime.html) enviroment necessary for ZEAL to run. 
 
 2. To install the standalone application, double-click the **ZEALinstaller_web.app** executable.
@@ -23,8 +30,6 @@ ZEAL is an app that allows two molecules to be aligned based on their shape rese
 
 	!!! Note
 		On Linux and Mac OS X, you do not have the option of adding a desktop shortcut.
-
-
 
 
 ### MatlabApp
@@ -92,12 +97,12 @@ To run your standalone application:
 ## Getting started
 Once ZEAL is running, performing a shape alignment is easy and the app design should make most operations feel intuitive. 
 
-1. Import the two structures you want to align by clicking the green load buttons in the import-tab. The "fixed" structure is the reference structure and 	the "rotating" structure is the structure whose orientation is going to be changed after the alignment. ZEAL allows structures to be loaded from pdb files, or to be downloaded directly from the PDB server - use the load-fetch switch to change between the modes. <img src="./images/ZEAL/processed/ZEAL_start.png" height="500px"> 
+1. Import the two structures you want to align by clicking the green load buttons in the import-tab. The "fixed" structure is the reference structure and 	the "rotating" structure is the structure whose orientation is going to be changed after the alignment. ZEAL allows structures to be loaded from pdb files, or to be downloaded directly from the PDB server - use the load-fetch switch to change between the modes. <img src="./images/ZEAL/processed/ZEAL_start.png" > 
 
-2. After importing the two structures you will see a low-resolution representation of the solvent-accessible surface of the structures - this can be changed in the setup tab. Note that the structures might have different relative sizes due to scaling (this is to achieve [scale invariance](howItWorks.md) when comparing the shapes). <img src="./images/ZEAL/processed/ZEAL_loaded.png" height="500px"> 
+2. After importing the two structures you will see a low-resolution representation of the solvent-accessible surface of the structures - this can be changed in the setup tab. Note that the structures might have different relative sizes due to scaling (this is to achieve [scale invariance](howItWorks.md) when comparing the shapes). <img src="./images/ZEAL/processed/ZEAL_loaded.png" > 
 
 3. Click the *Play button* (*Global search*) to start the search for optimal shape alignment. The progress of the search will be shown in a new window; the alignment with the best correlation coefficient found after a certain number of function evaluations. The search can be stopped by clicking on the stop button, otherwise it will stop when the [stopping criteria](userGuide.md) is met. 
-<img src="./images/ZEAL/processed/ZEAL_Search.png" height="500px"> 
+<img src="./images/ZEAL/processed/ZEAL_Search.png" > 
 
 4. To inspect the alignment in more detail you can view the structures in JSmol if you like. Click the export tab if you want to save the aligned structures to a pdb file. 
-<img src="./images/ZEAL/processed/ZEAL_JSmol.png" height="500px"> 
+<img src="./images/ZEAL/processed/ZEAL_JSmol.png" > 

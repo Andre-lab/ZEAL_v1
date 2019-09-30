@@ -27,6 +27,7 @@ end
 
 
 if ZEALsettings.globalSearchOp
+    fprintf(fid, '%-12s ZEAL Correlation coefficient: %s %5.5f \n', 'REMARK' , ZEALsettings.zcCC);
     fprintf(fid, '%-12s \n', 'REMARK');
     fprintf(fid, '%-12s ZEAL SETTINGS\n', 'REMARK');
     fprintf(fid, '%-12s ZEAL Maximum order of Zernike-Canterakis moments: %d\n', 'REMARK', ZEALsettings.order);
@@ -66,7 +67,7 @@ try
         model.atomName(n) = {sprintf('%-3s',cell2mat(model.atomName(n)))};
         
         % standard PDB output line
-        fprintf( fid, '%-6s%5u%5s%1.1s%3s %1.1s%4u%12.3f%8.3f%8.3f%6.2f%6.2f%12s%2s\n', ...
+        fprintf( fid, '%-6s%5u%5s%1.1s%3s %1.1s%4i%12.3f%8.3f%8.3f%6.2f%6.2f%12s%2s\n', ...
             cell2mat(model.recordName(n)), model.atomNum(n), cell2mat(model.atomName(n)), ...
             cell2mat(model.altLoc(n)), cell2mat(model.resName(n)), cell2mat(model.chainID(n)), ...
             model.resNum(n), model.X(n), model.Y(n), model.Z(n), model.occupancy(n), model.betaFactor(n), ...

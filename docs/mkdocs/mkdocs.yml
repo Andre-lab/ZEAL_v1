@@ -8,8 +8,7 @@ nav:
    - How it works: howItWorks.md
    - Gallery: gallery.md
    - About: 
-      - Release Notes: release-notes.md
-      - Contributing: contributing.md
+      - Release Notes: releaseNotes.md
       - License: license.md
 
 theme: 

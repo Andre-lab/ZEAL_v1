@@ -97,7 +97,7 @@ Once ZEAL is running, performing a shape alignment is easy and the app design sh
 2. After importing the two structures you will see a low-resolution representation of the solvent-accessible surface of the structures - this can be changed in the setup tab. Note that the structures might have different relative sizes due to scaling (this is to achieve [scale invariance](howItWorks.md) when comparing the shapes). <img src="./images/ZEAL/processed/ZEAL_loaded.png" height="500px"> 
 
 3. Click the *Play button* (*Global search*) to start the search for optimal shape alignment. The progress of the search will be shown in a new window; the alignment with the best correlation coefficient found after a certain number of function evaluations. The search can be stopped by clicking on the stop button, otherwise it will stop when the [stopping criteria](userGuide.md) is met. 
-<img src="./images/ZEAL/processed/ZEAL_search.png" height="500px"> 
+<img src="./images/ZEAL/processed/ZEAL_Search.png" height="500px"> 
 
 4. To inspect the alignment in more detail you can view the structures in JSmol if you like. Click the export tab if you want to save the aligned structures to a pdb file. 
 <img src="./images/ZEAL/processed/ZEAL_JSmol.png" height="500px"> 

@@ -87,7 +87,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#_1" tabindex="1" class="md-skip">
+      <a href="#span" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -252,12 +252,32 @@
     Shape-based molecular alignment
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what" class="md-nav__link">
+    What?
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how" class="md-nav__link">
+    How?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -415,12 +435,32 @@
     Shape-based molecular alignment
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what" class="md-nav__link">
+    What?
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why" class="md-nav__link">
+    Why?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how" class="md-nav__link">
+    How?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -475,17 +515,21 @@
               
                 
                 
-                <h1 id="_1">. <img src="./images/zealLogo.png" height="100px"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+                <h1 id="span"><img src="./images/zealLogo.svg" height="100px"> <span style="color:white">.&lt;\span&gt;<a class="headerlink" href="#span" title="Permanent link">&para;</a></h1>
 <h2 id="shape-based-molecular-alignment">Shape-based molecular alignment<a class="headerlink" href="#shape-based-molecular-alignment" title="Permanent link">&para;</a></h2>
 <hr />
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>ZEAL is an app that allows two molecules to be aligned based on their shape resemblance alone. This is done by projecting the shape onto 3D Zernike-Canterakis functions up to a specific order; the higher the order, the higher is the level of detail captured by the moments associated with the functions. ZEAL will find the optimalshape alignment by searching for the rotation that maximizes the correlation of these moments. </p>
+<h3 id="what">What?<a class="headerlink" href="#what" title="Permanent link">&para;</a></h3>
+<p>ZEAL is an app that allows two molecules to be rotationally aligned based on their shape resemblance.</p>
+<h3 id="why">Why?<a class="headerlink" href="#why" title="Permanent link">&para;</a></h3>
+<p>Proteins with similar global shape are often functionally related, despite low sequence and backbone conformation similarity. Conventional structure alignment tools will often fail to generate relevant alignments in such cases. </p>
+<h3 id="how">How?<a class="headerlink" href="#how" title="Permanent link">&para;</a></h3>
+<p>By projecting the protein shape onto 3D Zernike-Canterakis (ZC) functions, it is possible to extract varying levels of shape details in the moments associated with a set of ZC functions. ZEAL will find the optimal shape alignment by searching for the rotation that maximizes the correlation of these moments between two structures.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <ol>
-<li>
-<p>Download the ZEAL installer from <a href="https://github.com/Andre-lab/ZEAL/tree/master/installation/ZEALstandalone">github.com/Andre-lab/ZEAL</a>.
-   The installer will download the <a href="https://se.mathworks.com/products/compiler/matlab-runtime.html">MATLAB-runtime</a> enviroment necessary for ZEAL to run. </p>
-</li>
+<li>Download the ZEAL installer from <a href="https://github.com/Andre-lab/ZEAL/tree/master/installation/ZEALstandalone">github.com/Andre-lab/ZEAL</a> or at Filip´s Dropbox: <a href="https://www.dropbox.com/s/idoyz4bl1kbt7cs/ZEAL_web_installer.zip?dl=0">https://www.dropbox.com/s/idoyz4bl1kbt7cs/ZEAL_web_installer.zip?dl=0</a></li>
+</ol>
+<p>The installer will download the <a href="https://se.mathworks.com/products/compiler/matlab-runtime.html">MATLAB-runtime</a> enviroment necessary for ZEAL to run. </p>
+<ol>
 <li>
 <p>To install the standalone application, double-click the <strong>ZEALinstaller_web.app</strong> executable.</p>
 </li>
@@ -606,18 +650,18 @@
 <p>Once ZEAL is running, performing a shape alignment is easy and the app design should make most operations feel intuitive. </p>
 <ol>
 <li>
-<p>Import the two structures you want to align by clicking the green load buttons in the import-tab. The "fixed" structure is the reference structure and   the "rotating" structure is the structure whose orientation is going to be changed after the alignment. ZEAL allows structures to be loaded from pdb files, or to be downloaded directly from the PDB server - use the load-fetch switch to change between the modes. <img src="./images/ZEAL/processed/ZEAL_start.png" height="500px"> </p>
+<p>Import the two structures you want to align by clicking the green load buttons in the import-tab. The "fixed" structure is the reference structure and   the "rotating" structure is the structure whose orientation is going to be changed after the alignment. ZEAL allows structures to be loaded from pdb files, or to be downloaded directly from the PDB server - use the load-fetch switch to change between the modes. <img src="./images/ZEAL/processed/ZEAL_start.png" > </p>
 </li>
 <li>
-<p>After importing the two structures you will see a low-resolution representation of the solvent-accessible surface of the structures - this can be changed in the setup tab. Note that the structures might have different relative sizes due to scaling (this is to achieve <a href="howItWorks/">scale invariance</a> when comparing the shapes). <img src="./images/ZEAL/processed/ZEAL_loaded.png" height="500px"> </p>
+<p>After importing the two structures you will see a low-resolution representation of the solvent-accessible surface of the structures - this can be changed in the setup tab. Note that the structures might have different relative sizes due to scaling (this is to achieve <a href="howItWorks/">scale invariance</a> when comparing the shapes). <img src="./images/ZEAL/processed/ZEAL_loaded.png" > </p>
 </li>
 <li>
 <p>Click the <em>Play button</em> (<em>Global search</em>) to start the search for optimal shape alignment. The progress of the search will be shown in a new window; the alignment with the best correlation coefficient found after a certain number of function evaluations. The search can be stopped by clicking on the stop button, otherwise it will stop when the <a href="userGuide/">stopping criteria</a> is met. 
-<img src="./images/ZEAL/processed/ZEAL_Search.png" height="500px"> </p>
+<img src="./images/ZEAL/processed/ZEAL_Search.png" > </p>
 </li>
 <li>
 <p>To inspect the alignment in more detail you can view the structures in JSmol if you like. Click the export tab if you want to save the aligned structures to a pdb file. 
-<img src="./images/ZEAL/processed/ZEAL_JSmol.png" height="500px"> </p>
+<img src="./images/ZEAL/processed/ZEAL_JSmol.png" > </p>
 </li>
 </ol>
                 

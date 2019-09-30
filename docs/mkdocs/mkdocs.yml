@@ -1,11 +1,12 @@
-site_name: ZEAL manual
+site_name: ZEAL
 site_description: User manual for ZEAL
 site_author: Filip Persson-Ljung
 
 nav: 
    - Home : index.md
-   - Manual: manual.md
+   - User guide: userGuide.md
    - How it works: howItWorks.md
+   - Gallery: gallery.md
    - About: 
       - Release Notes: release-notes.md
       - Contributing: contributing.md

@@ -4,64 +4,60 @@
 Import the two structures you want to align by clicking the green load buttons in the import-tab. The "fixed" structure is the reference structure and 	the "rotating" structure is the structure whose rotation is going to be changed after the alignment. ZEAL allows structures to be loaded from pdb files, or to be downloaded directly from the PDB server - use the load-fetch switch to change between the modes.
 
 ## Shape-alignment 
-In the alignment tab there are three "strategies" available for generating a shape alignment:
+In the alignment tab there are three modes available for generating a shape alignment:
 
-  > <img src="../images/ZEAL/icons/the_flash_100px.png" height="30px"> Global search
+| Button | Mode | Description |
+|--|--|--|
+| <img src="../images/ZEAL/icons/the_flash_100px.png" height="30px"> | Global search | Automatic search for the best alignment using a machine learning algorithm called [surrogate optimization](howItWorks.md). The search progress is shown in a new window, showing the best correlation found for each function evaluation. The search can be stopped by clicking stop, otherwise the search will proceed until the stopping criteria is met (default is 300 function evaluations). Clicking on <img src="../images/ZEAL/icons/settings_100px.png" height="15px"> opens a settings window where the stopping criteria can be changed, and the number of random samples used in the surrogate creation phase.  |
+| <img src="../images/ZEAL/icons/gyro_100px.png" height="30px"> | Manual alignment | Interactive alignment by using the mouse to change the orientation of the rotating structure. The new orientation will be the starting point for the Global-search algorithm. |
+| <img src="../images/ZEAL/icons/dice_filled_60px.png" height="30px"> | Randomize | Apply a random rotation to the rotating structure. The maximmum change (in Euler angles) can be set by clicking on <img src="../images/ZEAL/icons/settings_100px.png" height="15px"> which will open a settings window. |
 
-  > <img src="../images/ZEAL/icons/gyro_100px.png" height="30px"> Manual alignment
 
-  > <img src="../images/ZEAL/icons/dice_filled_60px.png" height="30px"> Randomize
+After selecting a mode, clicking on <img src="../images/ZEAL/icons/next_96px.png" height="20px"> will activate it. 
 
-Clicking on one of them will select the given strategy, and clicking on the <span style="color:green"> &#9654; </span> (*Play*) button will apply it.
-In summary, the Global search option will automatically find the optimal alignment, wherease the other can be used to generate starting orientations for search algorithm. 
-
-### Global search
-This will automatically search for the best alignment. The search progress is shown in a new window, showing the best correlation found for each function evaluation. The search can be stopped by clicking on the stop button, otherwise the search will proceed until a stopping criteria is met; these can be changed in the settings - click on the &#9881; (gear) button. 
-
-#### Region of interest
+### Region of interest
 Sometimes a structure contains a region that you want to ignore for the shape alignment. For such cases, ZEAL allows interactive selection of a region-of-interest (ROI) using JSmol. Defining ROIs for each structure is done in the "Define Region of Interest" tab. Follow these steps to enable shape alignment with a ROI:
 
-1. Select a structure by clicking on "rotating/fixed". 
+1. Select a structure by clicking on rotating/fixed. 
 
-2. Click on "Select". You will first be prompted to save the structure to a pdb-file, and then prompted to load it in JSmol. Once the structure is loaded, click on the button to setup JSmol selection. (In the case that you do not see a structure in JSmol after loading it, please redo close the JSmol window and redo this step). 
+2. Click on select. You will first be prompted to save the structure to a pdb-file, and then prompted to load it in JSmol. Once the structure is loaded, click on the button to setup JSmol selection. (In the case that you do not see a structure in JSmol after loading it, please redo close the JSmol window and redo this step). 
 
-3. Select your ROI using the mouse: click-and-drag while holding the left SHIFT key to define select/deselect atoms within the selection box. Holding SHIFT+ALT (SHIFT+OPTION in Mac) will deselect all atoms within the selection-box. Selected atoms will have yellow halos around them. You can invert the selection by clicking on invert. When you are done, click save and you will be prompted to save a file. 
+3. Define your ROI using the mouse: click-and-drag while holding the left SHIFT key to select/deselect atoms within the selection box. Holding left SHIFT+ALT (SHIFT+OPTION in Mac) will deselect all atoms within the selection-box. Selected atoms will have yellow halos around them. You can invert the selection by clicking on invert. When you are done, click save and you will be prompted to save a file. 
 
 4. Import the ROI by clicking on import. You will prompted to load the file you saved in step (3).
 
-5. Enable ROI-based shape alignment by clicking on the relevent checkbox in the Setup tab. 
+5. Enable ROI-based shape alignment by clicking on ROI-checkbox in the *Setup tab*. 
 
-##### Example
+#### Example
 
+## JSmol
+As a convience feature, ZEAL has JSmol with webGL built in to allow more sophisticated visualizations of the structures after performing a shape alignment. In the standalone version, this integration is not yet entirely seamless: you will be prompted to save a pdb-file first and then load it in JSmol - this is easier than it may sound. 
 
-### Manual alignment
-This will allow interactive alignment by using the mouse to change the orientation of the rotating structure.
-
-### Randomize 
-The will apply a random rotation to the rotating structure. The amount can be changed in the settings - click on the &#9881; (gear) button. 
+| Button | Description | 
+|--|--|
+| <img src="../images/ZEAL/icons/JSmol_logo.png" height="20px"> | Shows the aligned structures |
+| <img src="../images/ZEAL/icons/Jmol_icon_128_bw.png" height="20px"> | Shows the fixed/rotating structure alone |
 
 ## Settings
 
-
 ### Zernike-Canterakis moments
+For computational reasons, only ZC moments of maximum order 1-20, 25 and 30 can be selected. However, order 20 has been shown to capture enough salient features of 3D shapes. See [shape reconstructions](howItWorks.md) to see how much shape information a set of ZC moments contain using the available moment orders. 
 
 ### Shape representation
 The protein-shape representation can be defined in the setup tab. There are three representations to choose frome:
 
 1. The shell defined by the solvent-excluded or solvent-accessible surface. The thickness (in grid units) of these shells can be changed as well.
-2. A density analogous to the electron density. The atoms are "smeared" out on the grid, and the relative size of the smeared atoms is controlled by the "Smear factor" (DEFINITION!). The iso-surface to be shown is set by the relative iso-value (0-1)
+2. A density analogous to the electron density. The atoms are "smeared" out on the grid, and the relative size of the radii of the smeared atoms is controlled by the "Smear factor" (the fraction of the grid to smear out over). The iso-surface to be shown is set by the relative iso-value (0-1). 
 
 ### Graphics
-Settings controlling scene lights and surface smoothing can be controlled in the graphics settings by clicking on 🌄 (*Sunrise Over Mountains*) in the "View structures" tab. 
+These settings control the appearance of structures shown in the *View structures* tab. 
 
-#### Light
-
-#### Smoothing 
-
-#### Colors 
-
-
-
+| Button | Description|
+|--|--|
+| <img src="../images/ZEAL/icons/lanscape_100px.png" height="20px">  |Open the graphics settings window with settings controlling scene lights and surface smoothing.  |
+| <img src="../images/ZEAL/icons/paint_palette_100px.png" height="20px"> | Opens a color-picking window to set another color for the structure. This will also be the default color used by JSmol. |
+| <img src="../images/ZEAL/icons/hide_100px.png" height="20px"> |	Hides the structure from view. |
+|  <img src="../images/ZEAL/icons/opacity_100px.png" height="20px">	 | Makes the surface transparent. |
 
 
 

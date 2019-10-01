@@ -1,26 +1,23 @@
 # <img src="./images/zealLogo.svg" height="100px"> <span style="color:white">.<\span>
 
-## Shape-based molecular alignment
 
----
 
-### What?
-ZEAL is an app that allows two molecules to be rotationally aligned based on their shape resemblance.
+> ### What?
+> ZEAL is an app that allows two molecules to be rotationally aligned based on their shape resemblance.
 
-### Why?
-Proteins with similar global shape are often functionally related, despite low sequence and backbone conformation similarity. Conventional structure alignment tools will often fail to generate relevant alignments in such cases. 
+> ### Why?
+> Proteins with similar global shape are often functionally related, despite low sequence and backbone conformation similarity. Conventional structure alignment tools will often fail to generate relevant alignments in such cases. 
 
-### How?
-By projecting the protein shape onto 3D Zernike-Canterakis (ZC) functions, it is possible to extract varying levels of shape details in the moments associated with a set of ZC functions. ZEAL will find the optimal shape alignment by searching for the rotation that maximizes the correlation of these moments between two structures.
+> ### How?
+> By projecting the protein shape onto 3D Zernike-Canterakis (ZC) functions, it is possible to extract varying levels of shape details in the moments associated with a set of ZC functions. ZEAL will find the optimal shape alignment by searching for the rotation that maximizes the correlation between moments from two structures.
 
 
 ## Installation
 
-1. Download the ZEAL installer from [github.com/Andre-lab/ZEAL](https://github.com/Andre-lab/ZEAL/tree/master/installation/ZEALstandalone) or at Filip´s Dropbox: https://www.dropbox.com/s/idoyz4bl1kbt7cs/ZEAL_web_installer.zip?dl=0
+1. Download the ZEAL installer from [github.com/Andre-lab/ZEAL](https://github.com/Andre-lab/ZEAL/tree/master/installation)
+	or at [Filip´s Dropbox](https://www.dropbox.com/s/lc5nyvbj1ybcijr/ZEAL_webInstaller_mcr.zip?dl=0). The installer will download the [MATLAB-runtime](https://se.mathworks.com/products/compiler/matlab-runtime.html) enviroment necessary for ZEAL to run. 
 
-   The installer will download the [MATLAB-runtime](https://se.mathworks.com/products/compiler/matlab-runtime.html) enviroment necessary for ZEAL to run. 
-
-2. To install the standalone application, double-click the **ZEALinstaller_web.app** executable.
+2. To install the standalone application, double-click the `ZEALinstaller_web.app` executable.
 	
 3. To complete installation, follow the instructions on the user interface.
 
@@ -35,8 +32,9 @@ By projecting the protein shape onto 3D Zernike-Canterakis (ZC) functions, it is
 ### MatlabApp
 If you have MATLAB installed, you can install ZEAL as a [Matlab app](https://se.mathworks.com/discovery/matlab-apps.html) directly. 
 
-1. Download the mlapp-installer file ´ZEAL.mlappinstall´  at [github.com/Andre-lab/ZEAL/](https://github.com/Andre-lab/ZEAL/tree/master/installation/MatlabApp)
-2. Double-click the **ZEAL.mlappinstall** executable and ZEAL will be installed as an app within MATLAB.
+1. Download the mlapp-installer file `ZEAL.mlappinstall`  at [github.com/Andre-lab/ZEAL/](https://github.com/Andre-lab/ZEAL/tree/master/installation) or from [Filip´s Dropbox](https://www.dropbox.com/s/snje4nrgw8jmh0c/ZEAL_1.mlappinstall?dl=0). 
+
+2. Double-click the `ZEAL.mlappinstall` executable and ZEAL will be installed as an app within MATLAB.
 
 Start ZEAL via *The Apps tab* of the MATLAB Toolstrip, which shows you the apps that you currently have installed.
 
@@ -73,10 +71,10 @@ To run your standalone application:
 	| Linux     | ``` ./ZEAL ```                     | 
 
 	??? note "Mac OS X"
-				- The shell script `run_ZEAL.sh` will temporarily set the necessary environment variables and start 
+				The shell script `run_ZEAL.sh` will temporarily set the necessary environment variables and start 
 			 	the application)
 
-			   	- to run the shell script, type
+			   	to run the shell script, type
 			   
 			       		./run_ZEAL.sh <mcr_directory> <argument_list>
 			       

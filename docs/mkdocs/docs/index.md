@@ -17,7 +17,7 @@
 1. Download the ZEAL installer from [github.com/Andre-lab/ZEAL](https://github.com/Andre-lab/ZEAL/tree/master/installation)
 	or at [Filip´s Dropbox](https://www.dropbox.com/s/lc5nyvbj1ybcijr/ZEAL_webInstaller_mcr.zip?dl=0). The installer will download the [MATLAB-runtime](https://se.mathworks.com/products/compiler/matlab-runtime.html) enviroment necessary for ZEAL to run. 
 
-2. To install the standalone application, double-click the `ZEALinstaller_web.app` executable.
+2. To install the standalone application, double-click the `ZEAL_webInstaller_mcr.app` executable.
 	
 3. To complete installation, follow the instructions on the user interface.
 

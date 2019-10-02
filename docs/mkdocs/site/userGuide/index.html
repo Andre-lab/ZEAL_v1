@@ -67,6 +67,8 @@
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
+      <link rel="stylesheet" href="../extra.css">
+    
     
       
     
@@ -279,19 +281,6 @@
     Region of interest
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -315,6 +304,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#zc-shape-decomposition" class="md-nav__link">
+    ZC shape decomposition
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#zernike-canterakis-moments" class="md-nav__link">
     Zernike-Canterakis moments
   </a>
@@ -325,6 +322,11 @@
   <a href="#shape-representation" class="md-nav__link">
     Shape representation
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -463,19 +465,6 @@
     Region of interest
   </a>
   
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -499,6 +488,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#zc-shape-decomposition" class="md-nav__link">
+    ZC shape decomposition
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#zernike-canterakis-moments" class="md-nav__link">
     Zernike-Canterakis moments
   </a>
@@ -509,6 +506,11 @@
   <a href="#shape-representation" class="md-nav__link">
     Shape representation
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -574,25 +576,28 @@
 </table>
 <p>After selecting a mode, clicking on <img src="../images/ZEAL/icons/next_96px.png" height="20px"> will activate it. </p>
 <h3 id="region-of-interest">Region of interest<a class="headerlink" href="#region-of-interest" title="Permanent link">&para;</a></h3>
-<p>Sometimes a structure contains a region that you want to ignore for the shape alignment. For such cases, ZEAL allows interactive selection of a region-of-interest (ROI) using JSmol. Defining ROIs for each structure is done in the "Define Region of Interest" tab. Follow these steps to enable shape alignment with a ROI:</p>
+<p>Sometimes a structure contains a region that you want to ignore for the shape alignment. For such cases, ZEAL allows interactive selection of a region-of-interest (ROI) using JSmol. Defining ROIs for each structure is done in the "Define Region of Interest" tab. </p>
+<p>As an <strong><em>example</em></strong>, let's consider the fixed structure <strong><em>6fi-H</em></strong> and the rotating structure <strong><em>5mn2-D</em></strong>. The fixed structure has an alpha-helical tail which we wish do leave out in the alignment.</p>
+<p><img src="../images/ZEAL/ZEAL_ROI_start.png" class="callout" height="200px"/></p>
 <ol>
 <li>
-<p>Select a structure by clicking on rotating/fixed. </p>
+<p>CLick on the <em>Define Region of Interest</em> tab and select the fixed structure by clicking on <strong><em>fixed</em></strong>. </p>
 </li>
 <li>
-<p>Click on select. You will first be prompted to save the structure to a pdb-file, and then prompted to load it in JSmol. Once the structure is loaded, click on the button to setup JSmol selection. (In the case that you do not see a structure in JSmol after loading it, please redo close the JSmol window and redo this step). </p>
+<p>Click on <strong><em>select</em></strong>. You will first be prompted to save the structure to a pdb-file, and then prompted to load it in JSmol. Once the structure is loaded, click on the button to setup JSmol selection. (In the case that you do not see a structure in JSmol after loading it, please redo close the JSmol window and redo this step). </p>
 </li>
 <li>
-<p>Define your ROI using the mouse: click-and-drag while holding the left SHIFT key to select/deselect atoms within the selection box. Holding left SHIFT+ALT (SHIFT+OPTION in Mac) will deselect all atoms within the selection-box. Selected atoms will have yellow halos around them. You can invert the selection by clicking on invert. When you are done, click save and you will be prompted to save a file. </p>
+<p>Define your ROI using the mouse: <strong><em>click-and-drag while holding the left SHIFT key</em></strong> to select/deselect atoms within the selection box. Holding left SHIFT+ALT (SHIFT+OPTION in Mac) will deselect all atoms within the selection-box. Selected atoms will have yellow halos around them. You can invert the selection by clicking on invert. When you are done, click save and you will be prompted to save a file. 
+<img src="../images/ZEAL/processed/ZEAL_JSmolSel.png"/></p>
 </li>
 <li>
-<p>Import the ROI by clicking on import. You will prompted to load the file you saved in step (3).</p>
+<p>Import the ROI by clicking on <strong><em>import</em></strong>. You will prompted to load the file you saved in step (3). After import you will see how the resulting structure is defined in ZEAL, with the non-ROI colored in white. 
+<img src="../images/ZEAL/processed/ZEAL_ROI_setup.png" /></p>
 </li>
 <li>
 <p>Enable ROI-based shape alignment by clicking on ROI-checkbox in the <em>Setup tab</em>. </p>
 </li>
 </ol>
-<h4 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
 <h2 id="jsmol">JSmol<a class="headerlink" href="#jsmol" title="Permanent link">&para;</a></h2>
 <p>As a convience feature, ZEAL has JSmol with webGL built in to allow more sophisticated visualizations of the structures after performing a shape alignment. In the standalone version, this integration is not yet entirely seamless: you will be prompted to save a pdb-file first and then load it in JSmol - this is easier than it may sound. </p>
 <table>
@@ -614,12 +619,16 @@
 </tbody>
 </table>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
-<h3 id="zernike-canterakis-moments">Zernike-Canterakis moments<a class="headerlink" href="#zernike-canterakis-moments" title="Permanent link">&para;</a></h3>
+<h3 id="zc-shape-decomposition">ZC shape decomposition<a class="headerlink" href="#zc-shape-decomposition" title="Permanent link">&para;</a></h3>
+<p>The <em>Setup</em> tab contains a number of pramaters that effect the ZC-decomposition of the structures. 
+<img src="../images/ZEAL/ZEAL_setupTab.png"/></p>
+<h4 id="zernike-canterakis-moments">Zernike-Canterakis moments<a class="headerlink" href="#zernike-canterakis-moments" title="Permanent link">&para;</a></h4>
 <p>For computational reasons, only ZC moments of maximum order 1-20, 25 and 30 can be selected. However, order 20 has been shown to capture enough salient features of 3D shapes. See <a href="../howItWorks/">shape reconstructions</a> to see how much shape information a set of ZC moments contain using the available moment orders. </p>
-<h3 id="shape-representation">Shape representation<a class="headerlink" href="#shape-representation" title="Permanent link">&para;</a></h3>
-<p>The protein-shape representation can be defined in the setup tab. There are three representations to choose frome:</p>
+<h4 id="shape-representation">Shape representation<a class="headerlink" href="#shape-representation" title="Permanent link">&para;</a></h4>
+<p>There are three representations to choose frome:</p>
 <ol>
-<li>The shell defined by the solvent-excluded or solvent-accessible surface. The thickness (in grid units) of these shells can be changed as well.</li>
+<li>The shell defined by the solvent-excluded or solvent-accessible surface. The probe-radius can be changed as well as 
+the thickness (in grid units) of the resulting "surface shell".</li>
 <li>A density analogous to the electron density. The atoms are "smeared" out on the grid, and the relative size of the radii of the smeared atoms is controlled by the "Smear factor" (the fraction of the grid to smear out over). The iso-surface to be shown is set by the relative iso-value (0-1). </li>
 </ol>
 <h3 id="graphics">Graphics<a class="headerlink" href="#graphics" title="Permanent link">&para;</a></h3>

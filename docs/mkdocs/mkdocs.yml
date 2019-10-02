@@ -54,6 +54,8 @@ markdown_extensions:
   
 
 extra_javascript: 
+
+extra_css: [extra.css]
 #  <script src="https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab.js"></script>
 
 #  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'

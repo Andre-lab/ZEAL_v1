@@ -16,19 +16,25 @@ In the alignment tab there are three modes available for generating a shape alig
 After selecting a mode, clicking on <img src="../images/ZEAL/icons/next_96px.png" height="20px"> will activate it. 
 
 ### Region of interest
-Sometimes a structure contains a region that you want to ignore for the shape alignment. For such cases, ZEAL allows interactive selection of a region-of-interest (ROI) using JSmol. Defining ROIs for each structure is done in the "Define Region of Interest" tab. Follow these steps to enable shape alignment with a ROI:
+Sometimes a structure contains a region that you want to ignore for the shape alignment. For such cases, ZEAL allows interactive selection of a region-of-interest (ROI) using JSmol. Defining ROIs for each structure is done in the "Define Region of Interest" tab. 
 
-1. Select a structure by clicking on rotating/fixed. 
+As an ***example***, let's consider the fixed structure ***6fi-H*** and the rotating structure ***5mn2-D***. The fixed structure has an alpha-helical tail which we wish do leave out in the alignment.
 
-2. Click on select. You will first be prompted to save the structure to a pdb-file, and then prompted to load it in JSmol. Once the structure is loaded, click on the button to setup JSmol selection. (In the case that you do not see a structure in JSmol after loading it, please redo close the JSmol window and redo this step). 
+<img src="../images/ZEAL/ZEAL_ROI_start.png" class="callout" height="200px"/>
 
-3. Define your ROI using the mouse: click-and-drag while holding the left SHIFT key to select/deselect atoms within the selection box. Holding left SHIFT+ALT (SHIFT+OPTION in Mac) will deselect all atoms within the selection-box. Selected atoms will have yellow halos around them. You can invert the selection by clicking on invert. When you are done, click save and you will be prompted to save a file. 
+1. CLick on the *Define Region of Interest* tab and select the fixed structure by clicking on ***fixed***. 
 
-4. Import the ROI by clicking on import. You will prompted to load the file you saved in step (3).
+2. Click on ***select***. You will first be prompted to save the structure to a pdb-file, and then prompted to load it in JSmol. Once the structure is loaded, click on the button to setup JSmol selection. (In the case that you do not see a structure in JSmol after loading it, please redo close the JSmol window and redo this step). 
+
+
+3. Define your ROI using the mouse: ***click-and-drag while holding the left SHIFT key*** to select/deselect atoms within the selection box. Holding left SHIFT+ALT (SHIFT+OPTION in Mac) will deselect all atoms within the selection-box. Selected atoms will have yellow halos around them. You can invert the selection by clicking on invert. When you are done, click save and you will be prompted to save a file. 
+<img src="../images/ZEAL/processed/ZEAL_JSmolSel.png"/>
+
+4. Import the ROI by clicking on ***import***. You will prompted to load the file you saved in step (3). After import you will see how the resulting structure is defined in ZEAL, with the non-ROI colored in white. 
+<img src="../images/ZEAL/processed/ZEAL_ROI_setup.png" />
 
 5. Enable ROI-based shape alignment by clicking on ROI-checkbox in the *Setup tab*. 
 
-#### Example
 
 ## JSmol
 As a convience feature, ZEAL has JSmol with webGL built in to allow more sophisticated visualizations of the structures after performing a shape alignment. In the standalone version, this integration is not yet entirely seamless: you will be prompted to save a pdb-file first and then load it in JSmol - this is easier than it may sound. 
@@ -40,13 +46,18 @@ As a convience feature, ZEAL has JSmol with webGL built in to allow more sophist
 
 ## Settings
 
-### Zernike-Canterakis moments
+### ZC shape decomposition
+The *Setup* tab contains a number of pramaters that effect the ZC-decomposition of the structures. 
+<img src="../images/ZEAL/ZEAL_setupTab.png"/>
+
+#### Zernike-Canterakis moments
 For computational reasons, only ZC moments of maximum order 1-20, 25 and 30 can be selected. However, order 20 has been shown to capture enough salient features of 3D shapes. See [shape reconstructions](howItWorks.md) to see how much shape information a set of ZC moments contain using the available moment orders. 
 
-### Shape representation
-The protein-shape representation can be defined in the setup tab. There are three representations to choose frome:
+#### Shape representation
+There are three representations to choose frome:
 
-1. The shell defined by the solvent-excluded or solvent-accessible surface. The thickness (in grid units) of these shells can be changed as well.
+1. The shell defined by the solvent-excluded or solvent-accessible surface. The probe-radius can be changed as well as 
+the thickness (in grid units) of the resulting "surface shell".
 2. A density analogous to the electron density. The atoms are "smeared" out on the grid, and the relative size of the radii of the smeared atoms is controlled by the "Smear factor" (the fraction of the grid to smear out over). The iso-surface to be shown is set by the relative iso-value (0-1). 
 
 ### Graphics

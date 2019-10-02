@@ -18,7 +18,11 @@ After selecting a mode, clicking on <img src="../images/ZEAL/icons/next_96px.png
 ### Region of interest
 Sometimes a structure contains a region that you want to ignore for the shape alignment. For such cases, ZEAL allows interactive selection of a region-of-interest (ROI) using JSmol. Defining ROIs for each structure is done in the "Define Region of Interest" tab. 
 
-As an ***example***, let's consider the fixed structure ***6fi-H*** and the rotating structure ***5mn2-D***. The fixed structure has an alpha-helical tail which we wish do leave out in the alignment.
+As an ***example***, let's consider the fixed structure ***6fi-H*** and the rotating structure ***5mn2-D***. This is how the shape alignment looks like after running the search
+
+<img src="../images/ZEAL/processed/ZEAL_6fi8VS5mn2.png"/>
+
+The fixed structure has an alpha-helical tail which we wish do leave out to get a different alignment. We do the following steps to do it:
 
 <img src="../images/ZEAL/ZEAL_ROI_start.png" class="callout" height="200px"/>
 
@@ -33,7 +37,9 @@ As an ***example***, let's consider the fixed structure ***6fi-H*** and the rota
 4. Import the ROI by clicking on ***import***. You will prompted to load the file you saved in step (3). After import you will see how the resulting structure is defined in ZEAL, with the non-ROI colored in white. 
 <img src="../images/ZEAL/processed/ZEAL_ROI_setup.png" />
 
-5. Enable ROI-based shape alignment by clicking on ROI-checkbox in the *Setup tab*. 
+5. Enable ROI-based shape alignment by clicking on ROI-checkbox in the *Setup tab* and run the search. This is how the new shape alignment looks like
+
+<img src="../images/ZEAL/processed/ZEAL_6fi8VS5mn2_ROI.png"/>
 
 
 ## JSmol

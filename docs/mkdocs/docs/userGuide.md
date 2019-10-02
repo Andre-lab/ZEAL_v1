@@ -20,11 +20,11 @@ Sometimes a structure contains a region that you want to ignore for the shape al
 
 As an ***example***, let's consider the fixed structure ***6fi-H*** and the rotating structure ***5mn2-D***. This is how the shape alignment looks like after running the search
 
-<img src="../images/ZEAL/processed/ZEAL_6fi8VS5mn2.png"/>
+<img src="../images/ZEAL/win/align_jsmol_noROI.png"/>
 
 The fixed structure has an alpha-helical tail which we wish do leave out to get a different alignment. We do the following steps to do it:
 
-<img src="../images/ZEAL/ZEAL_ROI_start.png" class="callout" height="200px"/>
+<img src="../images/ZEAL/win/ROI_setup.png" class="callout" height="200px"/>
 
 1. CLick on the *Define Region of Interest* tab and select the fixed structure by clicking on ***fixed***. 
 
@@ -32,14 +32,14 @@ The fixed structure has an alpha-helical tail which we wish do leave out to get 
 
 
 3. Define your ROI using the mouse: ***click-and-drag while holding the left SHIFT key*** to select/deselect atoms within the selection box. Holding left SHIFT+ALT (SHIFT+OPTION in Mac) will deselect all atoms within the selection-box. Selected atoms will have yellow halos around them. You can invert the selection by clicking on invert. When you are done, click save and you will be prompted to save a file. 
-<img src="../images/ZEAL/processed/ZEAL_JSmolSel.png"/>
+<img src="../images/ZEAL/win/jsmol_ROIsel.png"/>
 
 4. Import the ROI by clicking on ***import***. You will prompted to load the file you saved in step (3). After import you will see how the resulting structure is defined in ZEAL, with the non-ROI colored in white. 
-<img src="../images/ZEAL/processed/ZEAL_ROI_setup.png" />
+<img src="../images/ZEAL/win/ROI_import.png" />
 
 5. Enable ROI-based shape alignment by clicking on ROI-checkbox in the *Setup tab* and run the search. This is how the new shape alignment looks like
 
-<img src="../images/ZEAL/processed/ZEAL_6fi8VS5mn2_ROI.png"/>
+<img src="../images/ZEAL/win/align_jsmol_ROI.png"/>
 
 
 ## JSmol
@@ -54,7 +54,7 @@ As a convience feature, ZEAL has JSmol with webGL built in to allow more sophist
 
 ### ZC shape decomposition
 The *Setup* tab contains a number of pramaters that effect the ZC-decomposition of the structures. 
-<img src="../images/ZEAL/ZEAL_setupTab.png"/>
+<img src="../images/ZEAL/win/setup_tab.png"/>
 
 #### Zernike-Canterakis moments
 For computational reasons, only ZC moments of maximum order 1-20, 25 and 30 can be selected. However, order 20 has been shown to capture enough salient features of 3D shapes. See [shape reconstructions](howItWorks.md) to see how much shape information a set of ZC moments contain using the available moment orders. 

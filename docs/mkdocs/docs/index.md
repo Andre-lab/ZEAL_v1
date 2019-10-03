@@ -15,7 +15,7 @@
 ## Installation
 
 1. Download the ZEAL installer from [github.com/Andre-lab/ZEAL](https://github.com/Andre-lab/ZEAL/tree/master/installation)
-	or at [Filip´s Dropbox](https://www.dropbox.com/sh/8qalclk01b9l2wx/AAAJyIdtrInCnLHFYUZH6CB2a?dl=0). The installer will download the [MATLAB-runtime](https://se.mathworks.com/products/compiler/matlab-runtime.html) enviroment necessary for ZEAL to run. 
+	or at [Filip´s Dropbox](https://www.dropbox.com/s/9fvfkwd16kq8dw5/ZEAL_webInstaller_mcr.zip?dl=0). The installer will download the [MATLAB-runtime](https://se.mathworks.com/products/compiler/matlab-runtime.html) enviroment necessary for ZEAL to run. 
 
 2. To install the standalone application, double-click the `ZEAL_webInstaller_mcr.app` executable.
 	
@@ -32,11 +32,15 @@
 ### MatlabApp
 If you have MATLAB installed, you can install ZEAL as a [Matlab app](https://se.mathworks.com/discovery/matlab-apps.html) directly. 
 
-1. Download the mlapp-installer file `ZEAL.mlappinstall`  at [github.com/Andre-lab/ZEAL/](https://github.com/Andre-lab/ZEAL/tree/master/installation) or from [Filip´s Dropbox](https://www.dropbox.com/s/snje4nrgw8jmh0c/ZEAL_1.mlappinstall?dl=0). 
+1. Download the `ZEAL_install_bundle.zip` at [github.com/Andre-lab/ZEAL/](https://github.com/Andre-lab/ZEAL/tree/master/installation) or from [Filip´s Dropbox](https://www.dropbox.com/s/ueysv2zt6us3pxi/ZEAL_install_bundle.zip?dl=0). This file contains the *mlapp*-installer and folders necessary for ZEAL to run.
 
-2. Double-click the `ZEAL.mlappinstall` executable and ZEAL will be installed as an app within MATLAB.
+2. Extract the ZIP file to a destination where ZEAL should be run from within MATLAB.
 
-Start ZEAL via *The Apps tab* of the MATLAB Toolstrip, which shows you the apps that you currently have installed.
+3. In Matlab, navigate to the folder in step (2). 
+
+4. Double-click the `ZEAL_1.mlappinstall` executable and ZEAL will be installed as an app within MATLAB.
+
+5. Start ZEAL via *The Apps tab* of the MATLAB Toolstrip, which shows you the apps that you currently have installed.
 
 ## Launching the app
 To run your standalone application:

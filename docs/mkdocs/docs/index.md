@@ -36,7 +36,7 @@ If you have MATLAB installed, you can install ZEAL as a [Matlab app](https://se.
 
 2. Extract the ZIP file to a destination where ZEAL should be run from within MATLAB.
 
-3. In Matlab, navigate to the folder in step (2). 
+3. In MATLAB, navigate to the folder in step (2). 
 
 4. Double-click the `ZEAL_1.mlappinstall` executable and ZEAL will be installed as an app within MATLAB.
 

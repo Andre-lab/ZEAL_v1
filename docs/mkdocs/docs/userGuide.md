@@ -6,6 +6,9 @@ Import the two structures you want to align by clicking the green load buttons i
 ## Shape-alignment 
 In the alignment tab there are three modes available for generating a shape alignment:
 
+<img src="../images/ZEAL/win/alignment_tab.png"/>
+
+
 | Button | Mode | Description |
 |--|--|--|
 | <img src="../images/ZEAL/icons/the_flash_100px.png" height="30px"> | Global search | Automatic search for the best alignment using a machine learning algorithm called [surrogate optimization](howItWorks.md). The search progress is shown in a new window, showing the best correlation found for each function evaluation. The search can be stopped by clicking stop, otherwise the search will proceed until the stopping criteria is met (default is 300 function evaluations). Clicking on <img src="../images/ZEAL/icons/settings_100px.png" height="15px"> opens a settings window where the stopping criteria can be changed, and the number of random samples used in the surrogate creation phase.  |

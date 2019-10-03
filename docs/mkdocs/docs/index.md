@@ -32,6 +32,15 @@
 ### MatlabApp
 If you have MATLAB installed, you can install ZEAL as a [Matlab app](https://se.mathworks.com/discovery/matlab-apps.html) directly. 
 
+!!! success "Requirements"
+	***Matlab version 2019b*** and the following toolboxes:	
+
+	1. Bioinformatics Toolbox
+	2. Deep Learning Toolbox
+	3. Global Optimization Toolbox
+	4. Image Processing Toolbox
+	5. Statistics and Machine Learning Toolbox
+
 1. Download the `ZEAL_install_bundle.zip` at [github.com/Andre-lab/ZEAL/](https://github.com/Andre-lab/ZEAL/tree/master/installation) or from [Filip´s Dropbox](https://www.dropbox.com/s/ueysv2zt6us3pxi/ZEAL_install_bundle.zip?dl=0). This file contains the *mlapp*-installer and folders necessary for ZEAL to run.
 
 2. Extract the ZIP file to a destination where ZEAL should be run from within MATLAB.

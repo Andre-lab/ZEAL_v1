@@ -40,7 +40,9 @@ If you have MATLAB installed, you can install ZEAL as a [Matlab app](https://se.
 
 4. Double-click the `ZEAL_1.mlappinstall` executable and ZEAL will be installed as an app within MATLAB.
 
-5. Start ZEAL via *The Apps tab* of the MATLAB Toolstrip, which shows you the apps that you currently have installed.
+5. Add the folders to the path by running the command `addpath(genpath(pwd))` in the MATLAB console.
+
+6. Start ZEAL via *The Apps tab* of the MATLAB Toolstrip, which shows you the apps that you currently have installed.
 
 ## Launching the app
 To run your standalone application:

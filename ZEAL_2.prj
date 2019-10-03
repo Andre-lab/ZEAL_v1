@@ -1,0 +1,141 @@
+<deployment-project plugin="plugin.webdeploy" plugin-version="1.0">
+  <configuration file="/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL_2.prj" location="/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL" name="ZEAL_2" target="target.webdeploy" target-name="Web App Compiler">
+    <param.appname>ZEALweb_1</param.appname>
+    <param.intermediate>${PROJECT_ROOT}/ZEAL_2</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/ZEAL_2</param.files.only>
+    <param.output />
+    <param.logdir>${PROJECT_ROOT}/ZEAL_2</param.logdir>
+    <param.target.type>subtarget.web.app</param.target.type>
+    <param.user.defined.mcr.options />
+    <param.support.packages />
+    <unset>
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.target.type />
+      <param.user.defined.mcr.options />
+      <param.support.packages />
+    </unset>
+    <fileset.web.main>
+      <file>${PROJECT_ROOT}/ZEAL.mlapp</file>
+    </fileset.web.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}/lib/chi_coefficients</file>
+      <file>${PROJECT_ROOT}/lib/jsmol</file>
+    </fileset.resources>
+    <fileset.depfun>
+      <file>${MATLAB_ROOT}/toolbox/local/userpath.m</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/JSmol_logo.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/Jmol_icon_128_bw.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/cancel_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/cursor_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/dice_filled_60px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/export_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/flash_light_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/front_cube__filled_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/gyro_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/hide_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/import2_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/lanscape_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/next_96px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/opacity_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/paint_palette_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/settings_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/side_cube_filled_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/skip_to_start_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/spotlight_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/the_flash_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/icons/top_cube_filled_100px.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/logo.png</file>
+      <file>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only/lib/images/trackball/virtualTrackball.png</file>
+      <file>${PROJECT_ROOT}/dialogs/JSmolSelectionDialog.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/JSmolSelectionDialog_deployed.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/JSmolViewer.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/JSmolViewer_alignment.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/JSmolViewer_alignment_deployed.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/JSmolViewer_deployed.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/globalOptSettingsDialog.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/graphicsSettingsDialog.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/manualSearchDialog.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/randOpSettingsDialog.mlapp</file>
+      <file>${PROJECT_ROOT}/dialogs/surrOptimPlotDialog.mlapp</file>
+      <file>${PROJECT_ROOT}/functions/ZCD/computeChiCoeffs.m</file>
+      <file>${PROJECT_ROOT}/functions/ZCD/computeGeoMoments.m</file>
+      <file>${PROJECT_ROOT}/functions/ZCD/computeScaling.m</file>
+      <file>${PROJECT_ROOT}/functions/ZCD/computeZCmom.m</file>
+      <file>${PROJECT_ROOT}/functions/ZCD/flattenGrid.m</file>
+      <file>${PROJECT_ROOT}/functions/ZCD/getZCmomFromShape.m</file>
+      <file>${PROJECT_ROOT}/functions/ZCD/normalizeGrid.m</file>
+      <file>${PROJECT_ROOT}/functions/alignmentOptimization.m</file>
+      <file>${PROJECT_ROOT}/functions/euler2rotationMatrix.m</file>
+      <file>${PROJECT_ROOT}/functions/jsmol/constructJSmolPage_selection.m</file>
+      <file>${PROJECT_ROOT}/functions/jsmol/parseJSmolSel.m</file>
+      <file>${PROJECT_ROOT}/functions/pdb/ZEALexportPdb.m</file>
+      <file>${PROJECT_ROOT}/functions/pdb/ZEALexportPdb_all.m</file>
+      <file>${PROJECT_ROOT}/functions/pdb/mat2pdb.m</file>
+      <file>${PROJECT_ROOT}/functions/pdb/parsePdbStruct.m</file>
+      <file>${PROJECT_ROOT}/functions/pdb/pdb2mat.m</file>
+      <file>${PROJECT_ROOT}/functions/pdb/stripHpdbdata.m</file>
+      <file>${PROJECT_ROOT}/functions/shape/EDTms.m</file>
+      <file>${PROJECT_ROOT}/functions/shape/build_boundary.m</file>
+      <file>${PROJECT_ROOT}/functions/shape/createSASolid.m</file>
+      <file>${PROJECT_ROOT}/functions/shape/create_elecDensity.m</file>
+    </fileset.depfun>
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}/ZEAL_2" name="ZEALweb_1.ctf" optional="false">/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL_2/ZEALweb_1.ctf</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2019b.app</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.14.6</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

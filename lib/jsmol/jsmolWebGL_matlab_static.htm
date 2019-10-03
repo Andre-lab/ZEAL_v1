@@ -20,12 +20,11 @@ j2sPath: "j2s",
 script: "set antialiasDisplay; background {0.94, 0.94, 0.94};",
 disableJ2SLoadMonitor: false,
 disableInitialConsole: false,
-allowJavaScript: false
+allowJavaScript: true
 }
 
 $(document).ready(function() {
 $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info));
-
 
 })
 

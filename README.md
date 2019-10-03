@@ -2,7 +2,7 @@
 
 ## Shape-based moleculart alignment
 
-<img src="./docs/mkdocs/images/ZEAL/win/jsmol_align_full.png" > 
+<img src="/docs/mkdocs/images/ZEAL/win/jsmol_align_full.png" > 
 
 Project page and user guide at [https://andre-lab.github.io/ZEAL/](https://andre-lab.github.io/ZEAL/)
 

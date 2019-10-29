@@ -93,13 +93,17 @@ if nargin>2
         error('EXPECTED LOGICAL TYPE: The readHetatoms-flag has to be logical. Use true/false to include/skip HETATOM records. If flag not set, then all HETATOM records will be inlcuded.');
     end
 else
-    hetAtomOp = true;
+    hetAtomOp = false;
 end
 
 
 
 if exist(pdbfile,'file')>0
-    PDBdata = readpdb(pdbfile);    
+    %PDBdata = readpdb(pdbfile);   
+    
+    matlabPDBdata = pdbread(pdbfile);
+    PDBdata = parseMatlabPDBstruct(matlabPDBdata);
+    
     varargout(1) = {true};
     varargout(2) = {false};
 else
@@ -124,7 +128,11 @@ end
     function PDBdata = parseMatlabPDBstruct(pdbStruct)
         
         nAtoms = size(pdbStruct.Model(1).Atom, 2);
-        nHetAtoms = size(pdbStruct.Model(1).HeterogenAtom, 2);
+        if isfield(pdbStruct.Model(1), 'HeterogenAtom')
+            nHetAtoms = size(pdbStruct.Model(1).HeterogenAtom, 2);
+        else
+            hetAtomOp = false;
+        end
         
         if ~hetAtomOp
             numLines = nAtoms;
@@ -257,7 +265,7 @@ end
         Y          = cell(1,numLines);
         Z          = cell(1,numLines);
         
-        comment    = cell(1,numLines);
+        comment    = cell3(1,numLines);
         
         % read each line
         m = 1;

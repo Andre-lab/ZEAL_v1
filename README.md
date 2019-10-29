@@ -3,9 +3,9 @@
 ## Shape-based moleculart alignment
 Project page and user guide at [https://andre-lab.github.io/ZEAL/](https://andre-lab.github.io/ZEAL/)
 
-<img src="/docs/mkdocs/docs/images/ZEAL/win/align_searchprog_done.png" > 
+<img src="/docs/mkdocs/docs/images/ZEAL/win/ZealRF_search_duoWin.png" > 
 
-<img src="/docs/mkdocs/docs/images/ZEAL/win/jsmol_align_full.png" > 
+<img src="/docs/mkdocs/docs/images/ZEAL/win/ZealRF_JSmol_aligned.png" > 
 
 
 

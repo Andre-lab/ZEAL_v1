@@ -289,23 +289,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jsmol" class="md-nav__link">
-    JSmol
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#settings" class="md-nav__link">
-    Settings
+  <a href="#graphics-and-visualizations" class="md-nav__link">
+    Graphics and visualizations
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#zc-shape-decomposition" class="md-nav__link">
-    ZC shape decomposition
+  <a href="#jsmol" class="md-nav__link">
+    JSmol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
   </a>
   
     <nav class="md-nav">
@@ -321,18 +326,6 @@
           <li class="md-nav__item">
   <a href="#shape-representation" class="md-nav__link">
     Shape representation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#graphics" class="md-nav__link">
-    Graphics
   </a>
   
 </li>
@@ -473,23 +466,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#jsmol" class="md-nav__link">
-    JSmol
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#settings" class="md-nav__link">
-    Settings
+  <a href="#graphics-and-visualizations" class="md-nav__link">
+    Graphics and visualizations
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#zc-shape-decomposition" class="md-nav__link">
-    ZC shape decomposition
+  <a href="#jsmol" class="md-nav__link">
+    JSmol
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    Settings
   </a>
   
     <nav class="md-nav">
@@ -505,18 +503,6 @@
           <li class="md-nav__item">
   <a href="#shape-representation" class="md-nav__link">
     Shape representation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#graphics" class="md-nav__link">
-    Graphics
   </a>
   
 </li>
@@ -545,65 +531,59 @@
                 
                 <h1 id="user-guide">User guide<a class="headerlink" href="#user-guide" title="Permanent link">&para;</a></h1>
 <h2 id="loading-structures">Loading structures<a class="headerlink" href="#loading-structures" title="Permanent link">&para;</a></h2>
-<p>Import the two structures you want to align by clicking the green load buttons in the import-tab. The "fixed" structure is the reference structure and  the "rotating" structure is the structure whose rotation is going to be changed after the alignment. ZEAL allows structures to be loaded from pdb files, or to be downloaded directly from the PDB server - use the load-fetch switch to change between the modes.</p>
+<p>Import the two structures you want to align in the <em>import-tab</em>: the <strong>fixed" structure</strong> is the reference structure and the <strong>rotating" structure</strong> is the structure whose (rotational) orientation is going to be changed after the alignment. ZEAL allows structures to be loaded from pdb files, or to be downloaded directly from the PDB server - use the load-fetch switch to change between the modes. If a particular chain should be used, enter this before clicking import.</p>
 <h2 id="shape-alignment">Shape-alignment<a class="headerlink" href="#shape-alignment" title="Permanent link">&para;</a></h2>
-<p>In the alignment tab there are three modes available for generating a shape alignment:</p>
-<p><img src="../images/ZEAL/win/alignment_tab.png"/></p>
+<p>In the <em>alignment tab</em> there are three modes available for generating a shape alignment:</p>
 <table>
 <thead>
 <tr>
 <th>Button</th>
-<th>Mode</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><img src="../images/ZEAL/icons/the_flash_100px.png" height="30px"></td>
-<td>Global search</td>
-<td>Automatic search for the best alignment using a machine learning algorithm called <a href="../howItWorks/">surrogate optimization</a>. The search progress is shown in a new window, showing the best correlation found for each function evaluation. The search can be stopped by clicking stop, otherwise the search will proceed until the stopping criteria is met (default is 300 function evaluations). Clicking on <img src="../images/ZEAL/icons/settings_100px.png" height="15px"> opens a settings window where the stopping criteria can be changed, and the number of random samples used in the surrogate creation phase.</td>
+<td><strong>Global search</strong>  Automatic search for the best alignment using a machine learning algorithm called <a href="../howItWorks/">surrogate optimization</a>. The search progress is shown in a new window, showing the best correlation found for each function evaluation. The search can be stopped by clicking stop, otherwise the search will proceed until the stopping criteria is met (default is 300 function evaluations). Clicking on <img src="../images/ZEAL/icons/settings_100px.png" height="15px"> opens a settings window where the stopping criteria can be changed, and the number of random samples used in the surrogate creation phase.</td>
 </tr>
 <tr>
 <td><img src="../images/ZEAL/icons/gyro_100px.png" height="30px"></td>
-<td>Manual alignment</td>
-<td>Interactive alignment by using the mouse to change the orientation of the rotating structure. The new orientation will be the starting point for the Global-search algorithm.</td>
+<td><strong>Manual alignment</strong> Interactive alignment by using the mouse to change the orientation of the rotating structure. The new orientation will be the starting point for the Global-search algorithm.</td>
 </tr>
 <tr>
 <td><img src="../images/ZEAL/icons/dice_filled_60px.png" height="30px"></td>
-<td>Randomize</td>
-<td>Apply a random rotation to the rotating structure. The maximmum change (in Euler angles) can be set by clicking on <img src="../images/ZEAL/icons/settings_100px.png" height="15px"> which will open a settings window.</td>
+<td><strong>Randomize</strong> Apply a random rotation to the rotating structure. The maximmum change (in Euler angles) can be set by clicking on <img src="../images/ZEAL/icons/settings_100px.png" height="15px"> which will open a settings window.</td>
 </tr>
 </tbody>
 </table>
 <p>After selecting a mode, clicking on <img src="../images/ZEAL/icons/next_96px.png" height="20px"> will activate it. </p>
 <h3 id="region-of-interest">Region of interest<a class="headerlink" href="#region-of-interest" title="Permanent link">&para;</a></h3>
 <p>Sometimes a structure contains a region that you want to ignore for the shape alignment. For such cases, ZEAL allows interactive selection of a region-of-interest (ROI) using JSmol. Defining ROIs for each structure is done in the "Define Region of Interest" tab. </p>
-<p>As an <strong><em>example</em></strong>, let's consider the fixed structure <strong><em>6fi-H</em></strong> and the rotating structure <strong><em>5mn2-D</em></strong>. This is how the shape alignment looks like after running the search</p>
-<p><img src="../images/ZEAL/win/align_jsmol_noROI.png"/></p>
+<p>As an <strong><em>example</em></strong>, let's consider the fixed structure <strong><em>6fi8-H</em></strong> and the rotating structure <strong><em>5mn2-D</em></strong>. This is how the shape alignment looks like after running the search</p>
+<p><img src="../images/ZEAL/ROI/ZealRF_noROI_duoWin.png"/></p>
 <p>The fixed structure has an alpha-helical tail which we wish do leave out to get a different alignment. We do the following steps to do it:</p>
-<p><img src="../images/ZEAL/win/ROI_setup.png" class="callout" height="200px"/></p>
+<p><img src="../images/ZEAL/ROI/ZealRF_ROIsetup.png" class="callout" height="200px"/></p>
 <ol>
 <li>
 <p>CLick on the <em>Define Region of Interest</em> tab and select the fixed structure by clicking on <strong><em>fixed</em></strong>. </p>
 </li>
 <li>
-<p>Click on <strong><em>select</em></strong>. You will first be prompted to save the structure to a pdb-file, and then prompted to load it in JSmol. Once the structure is loaded, click on the button to setup JSmol selection. (In the case that you do not see a structure in JSmol after loading it, please redo close the JSmol window and redo this step). </p>
+<p>Click on <strong><em>define</em></strong> and a new window with JSmol will be shown. </p>
 </li>
 <li>
-<p>Define your ROI using the mouse: <strong><em>click-and-drag while holding the left SHIFT key</em></strong> to select/deselect atoms within the selection box. Holding left SHIFT+ALT (SHIFT+OPTION in Mac) will deselect all atoms within the selection-box. Selected atoms will have yellow halos around them. You can invert the selection by clicking on invert. When you are done, click save and you will be prompted to save a file. 
-<img src="../images/ZEAL/win/jsmol_ROIsel.png"/></p>
+<p>Define your ROI using the mouse: <strong><em>click-and-drag while holding the left SHIFT key</em></strong> to select/deselect atoms within the selection box. Holding left SHIFT+ALT (SHIFT+OPTION in Mac) will deselect all atoms within the selection-box. Selected atoms will have yellow halos around them. You can invert the selection by clicking on invert. When you are done, click <strong><em>Use selection</em></strong> in the JSmol window and you will see how the resulting structure is defined in ZEAL, with the non-ROI colored in white. 
+<img src="../images/ZEAL/ROI/ZealRF_ROIsel.png"/></p>
 </li>
 <li>
-<p>Import the ROI by clicking on <strong><em>import</em></strong>. You will prompted to load the file you saved in step (3). After import you will see how the resulting structure is defined in ZEAL, with the non-ROI colored in white. 
-<img src="../images/ZEAL/win/ROI_import.png" /></p>
-</li>
-<li>
-<p>Enable ROI-based shape alignment by clicking on ROI-checkbox in the <em>Setup tab</em> and run the search. This is how the new shape alignment looks like</p>
+<p>Enable ROI-based shape alignment by clicking on the ROI-checkbox in the <em>Setup tab</em> and then run the search. 
+<img src="../images/ZEAL/ROI/ZealRF_ROI_import.png"/></p>
 </li>
 </ol>
-<p><img src="../images/ZEAL/win/align_jsmol_ROI.png"/></p>
-<h2 id="jsmol">JSmol<a class="headerlink" href="#jsmol" title="Permanent link">&para;</a></h2>
-<p>As a convience feature, ZEAL has JSmol with webGL built in to allow more sophisticated visualizations of the structures after performing a shape alignment. In the standalone version, this integration is not yet entirely seamless: you will be prompted to save a pdb-file first and then load it in JSmol - this is easier than it may sound. </p>
+<p>This is how the new shape alignment looks like when running the search with ROI-constraint.</p>
+<p><img src="../images/ZEAL/ROI/ZealRF_ROI_duoWin.png"/></p>
+<h2 id="graphics-and-visualizations">Graphics and visualizations<a class="headerlink" href="#graphics-and-visualizations" title="Permanent link">&para;</a></h2>
+<p>The <em>visualization tab</em> contains options that control the apperance and visualization of the structures, including the open source molecular viewer JSmol.</p>
+<p><img src="../images/ZEAL/win/ZealRF_vizTab.png"/></p>
 <table>
 <thead>
 <tr>
@@ -613,41 +593,8 @@
 </thead>
 <tbody>
 <tr>
-<td><img src="../images/ZEAL/icons/JSmol_logo.png" height="20px"></td>
-<td>Shows the aligned structures</td>
-</tr>
-<tr>
-<td><img src="../images/ZEAL/icons/Jmol_icon_128_bw.png" height="20px"></td>
-<td>Shows the fixed/rotating structure alone</td>
-</tr>
-</tbody>
-</table>
-<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
-<h3 id="zc-shape-decomposition">ZC shape decomposition<a class="headerlink" href="#zc-shape-decomposition" title="Permanent link">&para;</a></h3>
-<p>The <em>Setup</em> tab contains a number of pramaters that effect the ZC-decomposition of the structures. 
-<img src="../images/ZEAL/win/setup_tab.png"/></p>
-<h4 id="zernike-canterakis-moments">Zernike-Canterakis moments<a class="headerlink" href="#zernike-canterakis-moments" title="Permanent link">&para;</a></h4>
-<p>For computational reasons, only ZC moments of maximum order 1-20, 25 and 30 can be selected. However, order 20 has been shown to capture enough salient features of 3D shapes. See <a href="../howItWorks/">shape reconstructions</a> to see how much shape information a set of ZC moments contain using the available moment orders. </p>
-<h4 id="shape-representation">Shape representation<a class="headerlink" href="#shape-representation" title="Permanent link">&para;</a></h4>
-<p>There are three representations to choose frome:</p>
-<ol>
-<li>The shell defined by the solvent-excluded or solvent-accessible surface. The probe-radius can be changed as well as 
-the thickness (in grid units) of the resulting "surface shell".</li>
-<li>A density analogous to the electron density. The atoms are "smeared" out on the grid, and the relative size of the radii of the smeared atoms is controlled by the "Smear factor" (the fraction of the grid to smear out over). The iso-surface to be shown is set by the relative iso-value (0-1). </li>
-</ol>
-<h3 id="graphics">Graphics<a class="headerlink" href="#graphics" title="Permanent link">&para;</a></h3>
-<p>These settings control the appearance of structures shown in the <em>View structures</em> tab. </p>
-<table>
-<thead>
-<tr>
-<th>Button</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img src="../images/ZEAL/icons/lanscape_100px.png" height="20px"></td>
-<td>Open the graphics settings window with settings controlling scene lights and surface smoothing.</td>
+<td><img src="../images/ZEAL/icons/settings_100px.png" height="20px"></td>
+<td>Opens a new window with settings controlling scene lights and surface smoothing for shapes shown in ZEAL. Some parameters for JSmol can also be changed here.</td>
 </tr>
 <tr>
 <td><img src="../images/ZEAL/icons/paint_palette_100px.png" height="20px"></td>
@@ -663,6 +610,19 @@ the thickness (in grid units) of the resulting "surface shell".</li>
 </tr>
 </tbody>
 </table>
+<h3 id="jsmol">JSmol<a class="headerlink" href="#jsmol" title="Permanent link">&para;</a></h3>
+<p>ZEAL has JSmol with webGL built in to allow more sophisticated visualizations of the structures after performing a shape alignment. JSmol can be started by clicking on the JSmol-logo in the visualization tab.   </p>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
+<p>The <em>Setup</em> tab contains a number of options that effect the ZC-decomposition of the structures and thus the resulting shape alignment.</p>
+<h3 id="zernike-canterakis-moments">Zernike-Canterakis moments<a class="headerlink" href="#zernike-canterakis-moments" title="Permanent link">&para;</a></h3>
+<p>For computational reasons, only ZC moments of maximum order 1-20, 25 and 30 can be selected. However, order 20 has been shown to capture enough salient features of 3D shapes. See <a href="../howItWorks/">shape reconstructions</a> to see how much shape information a set of ZC moments contain using the available moment orders. </p>
+<h3 id="shape-representation">Shape representation<a class="headerlink" href="#shape-representation" title="Permanent link">&para;</a></h3>
+<p>There are three representations to choose frome:</p>
+<ol>
+<li>The shell defined by the solvent-excluded or solvent-accessible surface. The probe-radius can be changed as well as 
+the thickness (in grid units) of the resulting "surface shell".</li>
+<li>A density analogous to the electron density. The atoms are "smeared" out on the grid, and the relative size of the radii of the smeared atoms is controlled by the "Smear factor" (the fraction of the grid to smear out over). The iso-surface to be shown is set by the relative iso-value (0-1). </li>
+</ol>
                 
                   
                 

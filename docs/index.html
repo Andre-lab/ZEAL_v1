@@ -646,24 +646,27 @@
 
 
 </details>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please wait while ZEAL is being started, this may take a minute.</p>
+</div>
 </li>
 </ol>
 <h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<p>Once ZEAL is running, performing a shape alignment is easy and the app design should make most operations feel intuitive. </p>
 <ol>
 <li>
-<p>Import the two structures you want to align by clicking the green load buttons in the import-tab. The "fixed" structure is the reference structure and   the "rotating" structure is the structure whose orientation is going to be changed after the alignment. ZEAL allows structures to be loaded from pdb files, or to be downloaded directly from the PDB server - use the load-fetch switch to change between the modes. <img src="./images/ZEAL/win/start.png" > </p>
+<p>Import the two structures you want to align in the import-tab: the "fixed" structure is the reference structure and  the "rotating" structure is the structure whose orientation is going to be changed after the alignment. ZEAL allows structures to be loaded from pdb files, or to be downloaded directly from the PDB server - use the load-fetch switch to change between the modes. If a particular chain should be used, enter this before clicking import.  <img src="./images/ZEAL/win/ZealRF_start_loadFetch.png" > </p>
 </li>
 <li>
-<p>After importing the two structures you will see a low-resolution representation of the solvent-accessible surface of the structures - this can be changed in the setup tab. Note that the structures might have different relative sizes due to scaling (this is to achieve <a href="howItWorks/">scale invariance</a> when comparing the shapes). <img src="./images/ZEAL/win/struct_loaded.png" > </p>
+<p>After importing the two structures you will see a low-resolution representation of the solvent-accessible surface of the structures - this can be changed in the setup tab. Note that the structures might have different relative sizes due to scaling (this is to achieve <a href="howItWorks/">scale invariance</a> when comparing the shapes). <img src="./images/ZEAL/win/ZealRF_loaded.png" > </p>
 </li>
 <li>
 <p>Click the <em>Play button</em> (<em>Global search</em>) to start the search for optimal shape alignment. The progress of the search will be shown in a new window; the alignment with the best correlation coefficient found after a certain number of function evaluations. The search can be stopped by clicking on the stop button, otherwise it will stop when a <a href="userGuide/">stopping criterium</a> is met. 
-<img src="./images/ZEAL/win/align_searchprog_done.png" > </p>
+<img src="./images/ZEAL/win/ZealRF_search_duoWin.png" > </p>
 </li>
 <li>
-<p>To inspect the alignment in more detail you can view the structures in JSmol if you like. Click the export tab if you want to save the aligned structures to a pdb file. 
-<img src="./images/ZEAL/win/jsmol_align_full.png" > </p>
+<p>To inspect the alignment in more detail, you can view the structures in JSmol that is embedded in ZEAL. JSmol is opened in the visualization tab. Click the export tab if you want to save the aligned structures to a pdb file. 
+<img src="./images/ZEAL/win/ZealRF_JSmol_aligned.png" > </p>
 </li>
 </ol>
                 

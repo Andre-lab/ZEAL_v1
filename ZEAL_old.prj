@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="1396411704" file="/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL.prj" location="/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL" name="ZEAL" preferred-package-location="/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL/for_redistribution" preferred-package-type="package.type.app" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="1396411704" file="/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL_old.prj" location="/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL" name="ZEAL_old" preferred-package-location="/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL/for_redistribution" preferred-package-type="package.type.app" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>ZEAL</param.appname>
     <param.icon>${PROJECT_ROOT}/ZEAL_resources/icon.icns</param.icon>
     <param.icons>
@@ -29,10 +29,10 @@ MR/v97/runtime/maci64:MR/v97/sys/os/maci64:MR/v97/bin/maci64
 If it is defined, set it to the following:
 
 ${DYLD_LIBRARY_PATH}:MR/v97/runtime/maci64:MR/v97/sys/os/maci64:MR/v97/bin/maci64</param.target.install.notes>
-    <param.intermediate>${PROJECT_ROOT}/ZEAL/for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}/ZEAL/for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}/ZEAL/for_redistribution</param.output>
-    <param.logdir>${PROJECT_ROOT}/ZEAL</param.logdir>
+    <param.intermediate>${PROJECT_ROOT}/ZEAL_old/for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}/ZEAL_old/for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}/ZEAL_old/for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}/ZEAL_old</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
@@ -152,10 +152,10 @@ ${DYLD_LIBRARY_PATH}:MR/v97/runtime/maci64:MR/v97/sys/os/maci64:MR/v97/bin/maci6
       <file>${PROJECT_ROOT}/functions/shape/create_elecDensity.m</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}/ZEAL/for_testing" name="run_ZEAL.sh" optional="false">/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL/for_testing/run_ZEAL.sh</file>
-      <file location="${PROJECT_ROOT}/ZEAL/for_testing" name="splash.png" optional="false">/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL/for_testing/splash.png</file>
-      <file location="${PROJECT_ROOT}/ZEAL/for_testing" name="ZEAL.app" optional="false">/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL/for_testing/ZEAL.app</file>
-      <file location="${PROJECT_ROOT}/ZEAL/for_testing" name="readme.txt" optional="true">/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/ZEAL_old/for_testing" name="splash.png" optional="false">/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL_old/for_testing/splash.png</file>
+      <file location="${PROJECT_ROOT}/ZEAL_old/for_testing" name="run_ZEAL.sh" optional="false">/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL_old/for_testing/run_ZEAL.sh</file>
+      <file location="${PROJECT_ROOT}/ZEAL_old/for_testing" name="readme.txt" optional="true">/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL_old/for_testing/readme.txt</file>
+      <file location="${PROJECT_ROOT}/ZEAL_old/for_testing" name="ZEAL.app" optional="false">/Users/filippersson/Dropbox/Research/Zernike/matlab/ZEAL/ZEAL_old/for_testing/ZEAL.app</file>
     </build-deliverables>
     <workflow />
     <matlab>
@@ -202,7 +202,7 @@ ${DYLD_LIBRARY_PATH}:MR/v97/runtime/maci64:MR/v97/sys/os/maci64:MR/v97/bin/maci6
       <vista>false</vista>
       <linux>false</linux>
       <solaris>false</solaris>
-      <osver>10.14.6</osver>
+      <osver>10.15.1</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>maci64</arch>

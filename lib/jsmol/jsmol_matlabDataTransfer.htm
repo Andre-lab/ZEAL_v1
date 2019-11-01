@@ -5,8 +5,9 @@
 <title>JSmol HTML5</title>
 
 <style>
+    
 button {
-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
 	background-color:#ffffff;
 	border-radius:6px;
@@ -31,6 +32,7 @@ button:active {
     position:relative;
 	top:1px;
 }
+
 </style>
 
 <script type="text/javascript" src="JSmol.min.js"></script>
@@ -61,21 +63,19 @@ $(document).ready(function() {
     Jmol.getApplet("jmolApplet0", Info);
   
     $("#appdiv").html(Jmol.getAppletHtml(jmolApplet0)); 
-   
+ 
 });
-
-
-
-        
+ 
 var lastPrompt=0;
 
 </script>
 </head>
 <body style="height:100%; width:100%">
-     <button id="setSelection">Use selection</button><br/> 
+  
 <div id="appdiv" style="width:100%;height:90%;"></div>
-
+<button id="setSelection">Use selection</button><br/> 
 <script type="text/javascript">
+    
    function setup(htmlComponent) {
 
      console.log("Setup called:", htmlComponent);
@@ -88,16 +88,13 @@ var lastPrompt=0;
      window.pdbFormatData = initialData.pdb;
      
      Jmol.script(jmolApplet0, "pdbdata = javascript('window.pdbFormatData'); load var pdbdata;");
-     
       
      document.getElementById("setSelection").addEventListener("click", function(event) {
-             
               var atoms = Jmol.getPropertyAsArray(jmolApplet0, "atomInfo", "selected");
               htmlComponent.Data = atoms;
-      
      });
-    
 }; 
+
 </script>
 </body>
 </html>

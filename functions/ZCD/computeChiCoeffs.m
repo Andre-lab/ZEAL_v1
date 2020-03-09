@@ -1,4 +1,4 @@
-function [chi_coeff, chi_coeff_cell, chi_nlm_rst_cell] = compute_chiCoeffs(order, UIhandle)
+function [chi_coeff, chi_coeff_cell, chi_nlm_rst_cell] = computeChiCoeffs(order, UIhandle)
 
 % Initialize waitbar in GUI
 d = uiprogressdlg(UIhandle,'Title','Please Wait',...

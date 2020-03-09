@@ -25,9 +25,9 @@ function [x,fval,exitflag,output,trials] = alignmentOptimization(ZCref, settings
         
     end
 
-    function [shape] = createShape(atom_list, settings)
+    function [shape] = createShape(atom_list, settings)        
         %CREATESHAPE Summary of this function goes here
-        %   Detailed explanation goes here
+        
         switch settings.shape_op
             
             case 1 % solvent/molecular surface

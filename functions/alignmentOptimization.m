@@ -5,8 +5,7 @@ function [x,fval,exitflag,output,trials] = alignmentOptimization(ZCref, settings
 [x,fval,exitflag,output,trials] = surrogateopt(@ZCcc_objfun,lb,ub,options);
 
     function [d] = ZCcc_objfun(x)
-        %OBJ_FUN Summary of this function goes here
-        
+        %OBJ_FUN Summary of this function goes here       
         %R = euler2rotationMatrix(x(1), x(2), x(3), 'zyz');
         
         Ry = @(theta) [cos(theta) 0 -sin(theta); 0 1 0; sin(theta) 0 cos(theta)];

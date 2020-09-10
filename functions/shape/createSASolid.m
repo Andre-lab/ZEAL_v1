@@ -34,7 +34,6 @@ padding = 0.15;
 n_atoms = size(atom_list,1);
 
 % center of mass
-% center of mass
 if isempty(COM)
     COM = mean(atom_list(:,1:3));
     %fprintf('\n Using default COM');
@@ -55,9 +54,7 @@ if isempty(scaling_factor)
     
     scaling_factor = (1-padding) / (Rmax );
     %else
-    %  fprintf('\n User-def scaling: %3.3f', scaling_factor);
-    
-    
+    %  fprintf('\n User-def scaling: %3.3f', scaling_factor); 
 end
 
 % scaled probe radius
@@ -124,9 +121,6 @@ while keep_on
         % rescale
         XYZ_comScaled =  XYZ_com * scaling_factor;
         
-        
-        
     end
-    
     
 end

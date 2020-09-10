@@ -41,6 +41,7 @@ if ZEALsettings.globalSearchOp
         fprintf(fid, '%-12s ZEAL \t\t\t\t Smear factor: %2.2f\n', 'REMARK', ZEALsettings.smearFactor);
     end
     
+    fprintf(fid, '%-12s TRANSFORMATION MATRIX\n', 'REMARK');
 end
 fprintf(fid, '%-12s \n', 'REMARK');
 

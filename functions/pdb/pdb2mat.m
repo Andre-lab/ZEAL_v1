@@ -17,7 +17,8 @@
 
 % pdb2mat(pdbStructure.pdb, chainID, readHetatoms)
 % where readHetatoms is a boolean (true/false) specifying if heteroatoms
-% should be read. Default: readHetatoms=false;
+% should be read. If true, then a separate structured array including hetAtoms is generated and outputted in varargout(2).
+% Default: readHetatoms=true;
 
 
 % OUTPUT
@@ -60,7 +61,7 @@
 % PDBdata.outfile = '3IJU_tran10angXdir.pdb';  % update file name
 % mat2pdb(PDBdata);                            % output data in PDB format
 
-function [PDBdata, varargout] = pdb2mat(pdbfile, varargin)
+function [PDBdata_noHet, varargout] = pdb2mat(pdbfile, varargin)
 %% -- OUTPUT --
 
 if nargin>1
@@ -91,13 +92,19 @@ end
 
 
 if exist(pdbfile,'file')>0
-    %PDBdata = readpdb(pdbfile);
     
     matlabPDBdata = readpdb(pdbfile);
-    PDBdata = parseMatlabPDBstruct(matlabPDBdata);
+    PDBdata_noHet = parseMatlabPDBstruct(matlabPDBdata, false);
     
-    varargout(1) = {true};
-    varargout(2) = {false};
+    
+    if hetAtomOp
+        PDBdata_Het = parseMatlabPDBstruct(matlabPDBdata, true);
+    else
+        PDBdata_noHet = [];
+    end
+    
+    varargout(4) = {true};
+    varargout(5) = {false};    
 else
     try
         [~,name,~] = fileparts(pdbfile);
@@ -106,18 +113,36 @@ else
         
         matlabPDBdata = fetchpdb(name(1:4));
         
-        PDBdata = parseMatlabPDBstruct(matlabPDBdata);
-        varargout(1) = {false};
-        varargout(2) = {true};
+        PDBdata_noHet = parseMatlabPDBstruct(matlabPDBdata, false);
+        
+        if hetAtomOp
+            PDBdata_Het = parseMatlabPDBstruct(matlabPDBdata, true);
+        end
+        
+        varargout(4) = {false};
+        varargout(5) = {true};
+
     catch
-        varargout(1) = {false};
-        varargout(2) = {false};
-        PDBdata = [];
+        PDBdata_noHet = [];
+        PDBdata_Het = [];
+        
         fprintf('\n Could not download structure %s in the RCSB PDB.', pdbid);
+        
+        varargout(4) = {false};
+        varargout(5) = {false};
     end
+    
 end
 
-    function PDBdata = parseMatlabPDBstruct(pdbStruct)
+chainOp = false;
+PDBdata_all = parseMatlabPDBstruct(matlabPDBdata, true);
+PDBdata_all_nohet = parseMatlabPDBstruct(matlabPDBdata, false);
+
+varargout(1) = {PDBdata_Het};
+varargout(2) = {PDBdata_all};
+varargout(3) = {PDBdata_all_nohet};
+
+    function PDBdata = parseMatlabPDBstruct(pdbStruct, hetAtomOp)
         
         nAtoms = size(pdbStruct.Model(1).Atom, 2);
         if isfield(pdbStruct.Model(1), 'HeterogenAtom')
@@ -178,7 +203,7 @@ end
             for n = 1:nHetAtoms
                 
                 recordName(m) = {'HETATM'};
-                atomNum(m)    = {pdbStruct.Model(1).HeterogenAtom(n).AtomSerNo};
+                atomNum(m)    = pdbStruct.Model(1).HeterogenAtom(n).AtomSerNo;
                 atomName(m)   = {pdbStruct.Model(1).HeterogenAtom(n).AtomName};
                 altLoc(m)     = {pdbStruct.Model(1).HeterogenAtom(n).altLoc};
                 resName(m)    = {pdbStruct.Model(1).HeterogenAtom(n).resName};
@@ -189,10 +214,10 @@ end
                 Y(m)          = pdbStruct.Model(1).HeterogenAtom(n).Y;
                 Z(m)          = pdbStruct.Model(1).HeterogenAtom(n).Z;
                 
-                occupancy(m)  = pdbStruct.Model(1).Atom(n).occupancy;
-                betaFactor(m) = pdbStruct.Model(1).Atom(n).tempFactor;
-                element(m)    = {pdbStruct.Model(1).Atom(n).element};
-                charge(m)    = {pdbStruct.Model(1).Atom(n).charge};
+                occupancy(m)  = pdbStruct.Model(1).HeterogenAtom(n).occupancy;
+                betaFactor(m) = pdbStruct.Model(1).HeterogenAtom(n).tempFactor;
+                element(m)    = {pdbStruct.Model(1).HeterogenAtom(n).element};
+                charge(m)    = {pdbStruct.Model(1).HeterogenAtom(n).charge};
                 
                 m = m + 1;
                 

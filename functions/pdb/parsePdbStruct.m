@@ -33,7 +33,6 @@ XYZ = [Xcrds Ycrds Zcrds];
 
 if nargin>1
     centerCOMop=varargin{1};
-    fprintf('\n No translation with origo at COM\n');
 else
     centerCOMop=true;
 end

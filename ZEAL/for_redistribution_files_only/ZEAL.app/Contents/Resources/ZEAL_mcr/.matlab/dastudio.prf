@@ -1,0 +1,11 @@
+#
+#DAStudio Preference File
+#
+
+
+[General]
+MatlabRelease=2019b
+
+[SLToolstrip]
+TSDisplay=0
+

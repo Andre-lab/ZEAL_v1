@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings name="Simulink" visible="true" xmlns="urn:mathworks.matlab.settings" xsi:schemaLocation="urn:mathworks.matlab.settings settings.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <key name="CacheFolder" visible="true">
+        <string>
+            <value><![CDATA[]]></value>
+        </string>
+    </key>
+    <key name="CallbackTracing" visible="true">
+        <string>
+            <value><![CDATA[off]]></value>
+        </string>
+    </key>
+    <key name="ClipboardBackgroundColorMode" visible="true">
+        <string>
+            <value><![CDATA[MatchCanvas]]></value>
+        </string>
+    </key>
+    <key name="CodeGenFolder" visible="true">
+        <string>
+            <value><![CDATA[]]></value>
+        </string>
+    </key>
+    <key name="CodeGenFolderStructure" visible="true">
+        <string>
+            <value><![CDATA[ModelSpecific]]></value>
+        </string>
+    </key>
+    <key name="EditorModernTheme" visible="true">
+        <string>
+            <value><![CDATA[on]]></value>
+        </string>
+    </key>
+    <key name="EditorPathXStyle" visible="true">
+        <string>
+            <value><![CDATA[grad_pin]]></value>
+        </string>
+    </key>
+    <key name="EditorScrollWheelZooms" visible="true">
+        <string>
+            <value><![CDATA[on]]></value>
+        </string>
+    </key>
+    <key name="EditorSmartEditing" visible="true">
+        <string>
+            <value><![CDATA[on]]></value>
+        </string>
+    </key>
+    <key name="EditorSmartEditingHotParam" visible="true">
+        <string>
+            <value><![CDATA[on]]></value>
+        </string>
+    </key>
+    <key name="ErrorIfLoadShadowedModel" visible="true">
+        <string>
+            <value><![CDATA[off]]></value>
+        </string>
+    </key>
+    <key name="ExportBackgroundColorMode" visible="true">
+        <string>
+            <value><![CDATA[MatchCanvas]]></value>
+        </string>
+    </key>
+    <key name="LastSavedRelease" visible="true">
+        <string>
+            <value><![CDATA[R2017b]]></value>
+        </string>
+    </key>
+    <key name="MDLFileChangedOnDiskHandling" visible="true">
+        <string>
+            <value><![CDATA[warning]]></value>
+        </string>
+    </key>
+    <key name="NotifyIfLoadOldModel" visible="true">
+        <string>
+            <value><![CDATA[off]]></value>
+        </string>
+    </key>
+    <key name="OpenLegendWhenChangingSampleTimeDisplay" visible="true">
+        <string>
+            <value><![CDATA[on]]></value>
+        </string>
+    </key>
+    <key name="PrintBackgroundColorMode" visible="true">
+        <string>
+            <value><![CDATA[White]]></value>
+        </string>
+    </key>
+    <key name="SaveSLXThumbnail" visible="true">
+        <string>
+            <value><![CDATA[on]]></value>
+        </string>
+    </key>
+    <settings name="AutoSaveOptions" visible="true">
+        <key name="SaveBackupOnVersionUpgrade" visible="true">
+            <bool>
+                <value>1</value>
+            </bool>
+        </key>
+        <key name="SaveOnModelUpdate" visible="true">
+            <bool>
+                <value>1</value>
+            </bool>
+        </key>
+    </settings>
+    <settings name="CustomObjectClasses" visible="true">
+        <key name="LookupTable" visible="true">
+            <string minArraySize="0" maxArraySize="0">
+                <value><![CDATA[Simulink.LookupTable]]></value>
+                <value><![CDATA[Simulink.Breakpoint]]></value>
+                <value><![CDATA[0]]></value>
+            </string>
+        </key>
+        <key name="Parameter" visible="true">
+            <string minArraySize="0" maxArraySize="0">
+                <value><![CDATA[Simulink.Parameter]]></value>
+                <value><![CDATA[0]]></value>
+            </string>
+        </key>
+        <key name="Signal" visible="true">
+            <string minArraySize="0" maxArraySize="0">
+                <value><![CDATA[Simulink.Signal]]></value>
+                <value><![CDATA[0]]></value>
+            </string>
+        </key>
+    </settings>
+    <settings name="MDLFileChangedOnDiskChecks" visible="true">
+        <key name="CheckWhenEditing" visible="true">
+            <bool>
+                <value>1</value>
+            </bool>
+        </key>
+        <key name="CheckWhenSaving" visible="true">
+            <bool>
+                <value>1</value>
+            </bool>
+        </key>
+        <key name="CheckWhenUpdating" visible="true">
+            <bool>
+                <value>1</value>
+            </bool>
+        </key>
+    </settings>
+    <settings name="ToolbarVisibilities" visible="true">
+        <key name="Build" visible="true">
+            <string>
+                <value><![CDATA[on]]></value>
+            </string>
+        </key>
+        <key name="CutCopyPaste" visible="true">
+            <string>
+                <value><![CDATA[off]]></value>
+            </string>
+        </key>
+        <key name="DebugModel" visible="true">
+            <string>
+                <value><![CDATA[off]]></value>
+            </string>
+        </key>
+        <key name="Find" visible="true">
+            <string>
+                <value><![CDATA[off]]></value>
+            </string>
+        </key>
+        <key name="Input" visible="true">
+            <string>
+                <value><![CDATA[off]]></value>
+            </string>
+        </key>
+        <key name="LibraryExplorer" visible="true">
+            <string>
+                <value><![CDATA[on]]></value>
+            </string>
+        </key>
+        <key name="ModelAdvisor" visible="true">
+            <string>
+                <value><![CDATA[on]]></value>
+            </string>
+        </key>
+        <key name="Navigate" visible="true">
+            <string>
+                <value><![CDATA[on]]></value>
+            </string>
+        </key>
+        <key name="Print" visible="true">
+            <string>
+                <value><![CDATA[off]]></value>
+            </string>
+        </key>
+        <key name="RefreshBlocks" visible="true">
+            <string>
+                <value><![CDATA[off]]></value>
+            </string>
+        </key>
+        <key name="Simulation" visible="true">
+            <string>
+                <value><![CDATA[on]]></value>
+            </string>
+        </key>
+        <key name="UndoRedo" visible="true">
+            <string>
+                <value><![CDATA[off]]></value>
+            </string>
+        </key>
+        <key name="UpdateDiagram" visible="true">
+            <string>
+                <value><![CDATA[off]]></value>
+            </string>
+        </key>
+    </settings>
+</settings>

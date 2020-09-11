@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings name="matlabCompiler" xmlns="urn:mathworks.matlab.settings" xsi:schemaLocation="urn:mathworks.matlab.settings settings.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <key name="CloseOnFinished">
+        <bool>
+            <value>0</value>
+        </bool>
+    </key>
+    <key name="RuntimeInstaller">
+        <string>
+            <value><![CDATA[/Users/filippersson/Library/Application Support/MCRInstaller9.6/MATLAB_Runtime_R2019a_maci64.zip]]></value>
+        </string>
+    </key>
+</settings>

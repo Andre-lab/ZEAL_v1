@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolset id="apps_toolset" template="true">
+   <tool id="favorites" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="cftool" toolset_id="curvefit_toolset"/>
+      <child_tool id="optimtool" toolset_id="optim_toolset"/>
+      <child_tool id="pidTuner" toolset_id="control_toolset"/>
+      <child_tool id="modbusExplorer" toolset_id="modbusapplet_toolset"/>
+      <child_tool id="systemIdentification" toolset_id="ident_toolset"/>
+      <child_tool id="signalAnalyzer" toolset_id="signal_toolset"/>
+      <child_tool id="tmtool" toolset_id="instrument_toolset"/>
+      <child_tool id="simbiology" toolset_id="simbio_toolset"/>
+      <child_tool id="simBiologyModelAnalyzer" toolset_id="simbio_toolset"/>
+      <child_tool id="ccoder" toolset_id="matlabcoder_toolset"/>
+      <child_tool id="applicationCompiler" toolset_id="compiler_toolset"/>
+   </tool>
+   <tool id="code_verify_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group"/>
+   <tool id="simulation_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group"/>
+   <tool id="internal" quick_access_eligible="false" toolset_id="apps_toolset" type="group"/>
+   <tool id="learning_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="ml_classification_2" toolset_id="mlearnapp_toolset"/>
+      <child_tool id="deepNetworkDesigner" toolset_id="nnet_deepapp_toolset"/>
+      <child_tool id="nctool_2" toolset_id="nnet_toolset"/>
+      <child_tool id="nftool_2" toolset_id="nnet_toolset"/>
+      <child_tool id="nprtool_2" toolset_id="nnet_toolset"/>
+      <child_tool id="ntstool_2" toolset_id="nnet_toolset"/>
+      <child_tool id="ml_regression_2" toolset_id="mlearnapp_toolset"/>
+   </tool>
+   <tool id="my_apps" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="8fa18480-a49b-4f96-b291-ab4e06e2a55a" toolset_id="user_apps_toolset"/>
+   </tool>
+   <tool id="control_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="controlSystemDesigner" toolset_id="control_toolset"/>
+      <child_tool id="controlSystemTuner" toolset_id="control_toolset"/>
+      <child_tool id="linearSystemAnalyzer" toolset_id="control_toolset"/>
+      <child_tool id="modelReducer" toolset_id="control_toolset"/>
+      <child_tool id="pidTuner" toolset_id="control_toolset"/>
+      <child_tool id="systemIdentification" toolset_id="ident_toolset"/>
+   </tool>
+   <tool id="signal_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="filterbuilder" toolset_id="dsp_toolset"/>
+      <child_tool id="fdatool" toolset_id="signal_toolset"/>
+      <child_tool id="signalAnalyzer" toolset_id="signal_toolset"/>
+      <child_tool id="wintool" toolset_id="signal_toolset"/>
+   </tool>
+   <tool id="verification_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group"/>
+   <tool id="automotive_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group"/>
+   <tool id="deployment_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="applicationCompiler" toolset_id="compiler_toolset"/>
+      <child_tool id="hadoopCompiler" toolset_id="compiler_toolset"/>
+      <child_tool id="libraryCompiler" toolset_id="compiler_toolset"/>
+      <child_tool id="serverArchiveCompiler" toolset_id="compilersdk_toolset"/>
+      <child_tool id="webApplicationCompiler" toolset_id="compiler_toolset"/>
+   </tool>
+   <tool id="finance_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group"/>
+   <tool id="image_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="cameraCalibrator" toolset_id="vision_toolset"/>
+      <child_tool id="colorThresholder" toolset_id="image_toolset"/>
+      <child_tool id="dicomBrowser" toolset_id="image_toolset"/>
+      <child_tool id="imageBatchProcessor" toolset_id="image_toolset"/>
+      <child_tool id="imageBrowser" toolset_id="image_toolset"/>
+      <child_tool id="imageLabeler" toolset_id="vision_toolset"/>
+      <child_tool id="imageRegionAnalyzer" toolset_id="image_toolset"/>
+      <child_tool id="imageSegmenter" toolset_id="image_toolset"/>
+      <child_tool id="imtool" toolset_id="image_toolset"/>
+      <child_tool id="ocrTrainer" toolset_id="vision_toolset"/>
+      <child_tool id="registrationEstimator" toolset_id="image_toolset"/>
+      <child_tool id="stereoCameraCalibrator" toolset_id="vision_toolset"/>
+      <child_tool id="videoLabeler" toolset_id="vision_toolset"/>
+      <child_tool id="implay" toolset_id="image_toolset"/>
+      <child_tool id="volumeViewer" toolset_id="image_toolset"/>
+   </tool>
+   <tool id="test_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="tmtool" toolset_id="instrument_toolset"/>
+      <child_tool id="modbusExplorer" toolset_id="modbusapplet_toolset"/>
+   </tool>
+   <tool id="math_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="cftool" toolset_id="curvefit_toolset"/>
+      <child_tool id="dfittool" toolset_id="stats_toolset"/>
+      <child_tool id="optimtool" toolset_id="optim_toolset"/>
+      <child_tool id="pdetool" toolset_id="pde_toolset"/>
+   </tool>
+   <tool id="code_gen_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="fixedPointConverter" toolset_id="fixedpointconverter_toolset"/>
+      <child_tool id="hdlcoder" toolset_id="hdlcoder_toolset"/>
+      <child_tool id="ccoder" toolset_id="matlabcoder_toolset"/>
+   </tool>
+   <tool id="database_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group"/>
+   <tool id="biology_products" quick_access_eligible="false" toolset_id="apps_toolset" type="group">
+      <child_tool id="genomicsViewer" toolset_id="bioinfo_toolset"/>
+      <child_tool id="molviewer" toolset_id="bioinfo_toolset"/>
+      <child_tool id="phytreeviewer" toolset_id="bioinfo_toolset"/>
+      <child_tool id="seqalignviewer" toolset_id="bioinfo_toolset"/>
+      <child_tool id="seqviewer" toolset_id="bioinfo_toolset"/>
+      <child_tool id="simbiology" toolset_id="simbio_toolset"/>
+      <child_tool id="simBiologyModelAnalyzer" toolset_id="simbio_toolset"/>
+   </tool>
+   <tool id="apps" quick_access_eligible="false" toolset_id="apps_toolset" type="gallery">
+      <child_tool id="favorites" toolset_id="apps_toolset"/>
+      <child_tool id="my_apps" toolset_id="apps_toolset"/>
+      <child_tool id="learning_products" toolset_id="apps_toolset"/>
+      <child_tool id="math_products" toolset_id="apps_toolset"/>
+      <child_tool id="control_products" toolset_id="apps_toolset"/>
+      <child_tool id="automotive_products" toolset_id="apps_toolset"/>
+      <child_tool id="signal_products" toolset_id="apps_toolset"/>
+      <child_tool id="image_products" toolset_id="apps_toolset"/>
+      <child_tool id="test_products" toolset_id="apps_toolset"/>
+      <child_tool id="finance_products" toolset_id="apps_toolset"/>
+      <child_tool id="biology_products" toolset_id="apps_toolset"/>
+      <child_tool id="code_gen_products" toolset_id="apps_toolset"/>
+      <child_tool id="code_verify_products" toolset_id="apps_toolset"/>
+      <child_tool id="deployment_products" toolset_id="apps_toolset"/>
+      <child_tool id="database_products" toolset_id="apps_toolset"/>
+      <child_tool id="verification_products" toolset_id="apps_toolset"/>
+      <child_tool id="simulation_products" toolset_id="apps_toolset"/>
+      <child_tool id="internal" toolset_id="apps_toolset"/>
+   </tool>
+   <toolset id="user_apps_toolset" template="true">
+      <tool id="8fa18480-a49b-4f96-b291-ab4e06e2a55a" toolset_id="user_apps_toolset"/>
+   </toolset>
+   <toolset id="optim_toolset" template="true">
+      <tool id="optimtool" toolset_id="optim_toolset"/>
+   </toolset>
+   <toolset id="pde_toolset" template="true">
+      <tool id="pdetool" toolset_id="pde_toolset"/>
+   </toolset>
+   <toolset id="curvefit_toolset" template="true">
+      <tool id="cftool" toolset_id="curvefit_toolset"/>
+   </toolset>
+   <toolset id="instrument_toolset" template="true">
+      <tool id="tmtool" toolset_id="instrument_toolset"/>
+   </toolset>
+   <toolset id="stats_toolset" template="true">
+      <tool id="dfittool" toolset_id="stats_toolset"/>
+   </toolset>
+   <toolset id="simbio_toolset" template="true">
+      <tool id="simBiologyModelAnalyzer" toolset_id="simbio_toolset"/>
+      <tool id="simbiology" toolset_id="simbio_toolset"/>
+   </toolset>
+   <toolset id="fixedpointconverter_toolset" template="true">
+      <tool id="fixedPointConverter" toolset_id="fixedpointconverter_toolset"/>
+   </toolset>
+   <toolset id="nnet_toolset" template="true">
+      <tool id="ntstool_2" toolset_id="nnet_toolset"/>
+      <tool id="nctool_2" toolset_id="nnet_toolset"/>
+      <tool id="nftool_2" toolset_id="nnet_toolset"/>
+      <tool id="nprtool_2" toolset_id="nnet_toolset"/>
+   </toolset>
+   <toolset id="modbusapplet_toolset" template="true">
+      <tool id="modbusExplorer" toolset_id="modbusapplet_toolset"/>
+   </toolset>
+   <toolset id="nnet_deepapp_toolset" template="true">
+      <tool id="deepNetworkDesigner" toolset_id="nnet_deepapp_toolset"/>
+   </toolset>
+   <toolset id="compilersdk_toolset" template="true">
+      <tool id="serverArchiveCompiler" toolset_id="compilersdk_toolset"/>
+   </toolset>
+   <toolset id="mlearnapp_toolset" template="true">
+      <tool id="ml_regression_2" toolset_id="mlearnapp_toolset"/>
+      <tool id="ml_classification_2" toolset_id="mlearnapp_toolset"/>
+   </toolset>
+   <toolset id="control_toolset" template="true">
+      <tool id="controlSystemTuner" toolset_id="control_toolset"/>
+      <tool id="pidTuner" toolset_id="control_toolset"/>
+      <tool id="controlSystemDesigner" toolset_id="control_toolset"/>
+      <tool id="linearSystemAnalyzer" toolset_id="control_toolset"/>
+      <tool id="modelReducer" toolset_id="control_toolset"/>
+   </toolset>
+   <toolset id="ident_toolset" template="true">
+      <tool id="systemIdentification" toolset_id="ident_toolset"/>
+   </toolset>
+   <toolset id="dsp_toolset" template="true">
+      <tool id="filterbuilder" toolset_id="dsp_toolset"/>
+   </toolset>
+   <toolset id="bioinfo_toolset" template="true">
+      <tool id="genomicsViewer" toolset_id="bioinfo_toolset"/>
+      <tool id="seqalignviewer" toolset_id="bioinfo_toolset"/>
+      <tool id="molviewer" toolset_id="bioinfo_toolset"/>
+      <tool id="seqviewer" toolset_id="bioinfo_toolset"/>
+      <tool id="phytreeviewer" toolset_id="bioinfo_toolset"/>
+   </toolset>
+   <toolset id="matlabcoder_toolset" template="true">
+      <tool id="ccoder" toolset_id="matlabcoder_toolset"/>
+   </toolset>
+   <toolset id="image_toolset" template="true">
+      <tool id="dicomBrowser" toolset_id="image_toolset"/>
+      <tool id="volumeViewer" toolset_id="image_toolset"/>
+      <tool id="colorThresholder" toolset_id="image_toolset"/>
+      <tool id="implay" toolset_id="image_toolset"/>
+      <tool id="imageBrowser" toolset_id="image_toolset"/>
+      <tool id="imageBatchProcessor" toolset_id="image_toolset"/>
+      <tool id="registrationEstimator" toolset_id="image_toolset"/>
+      <tool id="imageRegionAnalyzer" toolset_id="image_toolset"/>
+      <tool id="imageSegmenter" toolset_id="image_toolset"/>
+      <tool id="imtool" toolset_id="image_toolset"/>
+   </toolset>
+   <toolset id="signal_toolset" template="true">
+      <tool id="wintool" toolset_id="signal_toolset"/>
+      <tool id="signalAnalyzer" toolset_id="signal_toolset"/>
+      <tool id="fdatool" toolset_id="signal_toolset"/>
+   </toolset>
+   <toolset id="vision_toolset" template="true">
+      <tool id="videoLabeler" toolset_id="vision_toolset"/>
+      <tool id="imageLabeler" toolset_id="vision_toolset"/>
+      <tool id="cameraCalibrator" toolset_id="vision_toolset"/>
+      <tool id="ocrTrainer" toolset_id="vision_toolset"/>
+      <tool id="stereoCameraCalibrator" toolset_id="vision_toolset"/>
+   </toolset>
+   <toolset id="compiler_toolset" template="true">
+      <tool id="hadoopCompiler" toolset_id="compiler_toolset"/>
+      <tool id="webApplicationCompiler" toolset_id="compiler_toolset"/>
+      <tool id="libraryCompiler" toolset_id="compiler_toolset"/>
+      <tool id="applicationCompiler" toolset_id="compiler_toolset"/>
+   </toolset>
+   <toolset id="hdlcoder_toolset" template="true">
+      <tool id="hdlcoder" toolset_id="hdlcoder_toolset"/>
+   </toolset>
+</toolset>

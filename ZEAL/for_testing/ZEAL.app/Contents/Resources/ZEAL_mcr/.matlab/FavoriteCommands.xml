@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolset id="user_favorite_commands_toolset" template="false">
+   <tool id="goto_user_example" label="Go to User Folder" toolset_id="user_favorite_commands_toolset">
+      <callback>% Change MATLAB® current folder to the first folder on the search path
+cd(userpath);</callback>
+      <icon name="favorite_command"/>
+   </tool>
+   <tool id="clear_example" label="Clear Variables &amp; Commands" toolset_id="user_favorite_commands_toolset">
+      <callback>% Remove all variables from the current MATLAB® workspace
+clear;
+
+% Clear all input and output from the MATLAB® Command Window
+clc;</callback>
+      <icon name="favorite_command_C"/>
+   </tool>
+   <tool id="examples" label="Examples" toolset_id="user_favorite_commands_toolset" type="group">
+      <icon name="favorite_category"/>
+      <child_tool id="about_example" toolset_id="user_favorite_commands_toolset"/>
+      <child_tool id="clear_example" toolset_id="user_favorite_commands_toolset"/>
+      <child_tool id="goto_user_example" toolset_id="user_favorite_commands_toolset"/>
+      <child_tool id="logo_example" toolset_id="user_favorite_commands_toolset"/>
+      <parent_tool id="favorite_commands_gallery" toolset_id="favorite_commands_toolset"/>
+   </tool>
+   <tool id="1ae6aa3b-1336-403a-a3df-a82e8dd94695" toolset_id="user_favorite_commands_toolset">
+      <callback>rad2deg(ans)</callback>
+      <icon name="favorite_command"/>
+      <parent_tool id="default_category" toolset_id="favorite_commands_toolset"/>
+   </tool>
+   <tool id="logo_example" label="MATLAB® Logo" toolset_id="user_favorite_commands_toolset">
+      <callback>% Create a figure and display the MATLAB® logo
+logo;
+
+% Update figure so it is visible during animation
+drawnow;
+
+% Rotate the MATLAB® logo
+[az,el] = view;
+for step = 1:360
+   % Set new position of viewer
+   view(az + step, el);
+   % Stop MATLAB execution temporarily to slow down animation
+   pause(0.005);
+end</callback>
+      <icon name="matlab_command"/>
+   </tool>
+   <tool id="about_example" label="About Favorite Commands" toolset_id="user_favorite_commands_toolset">
+      <callback>% Display help documentation for Favorite Commands
+helpview([docroot '/mapfiles/matlab_env.map'], 'matlab_favorites');</callback>
+      <icon name="help_command"/>
+   </tool>
+</toolset>

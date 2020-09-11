@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings name="database" xmlns="urn:mathworks.matlab.settings" xsi:schemaLocation="urn:mathworks.matlab.settings settings.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <key name="DataReturnFormat">
+        <string>
+            <value><![CDATA[cellarray]]></value>
+        </string>
+    </key>
+    <key name="ErrorHandling">
+        <string>
+            <value><![CDATA[store]]></value>
+        </string>
+    </key>
+    <key name="FetchBatchSize">
+        <string>
+        </string>
+    </key>
+    <key name="FetchInBatches">
+        <string>
+        </string>
+    </key>
+    <key name="JDBCDataSourceFile">
+        <string>
+        </string>
+    </key>
+    <key name="NullNumberRead">
+        <string>
+        </string>
+    </key>
+    <key name="NullNumberWrite">
+        <string>
+        </string>
+    </key>
+    <key name="NullStringRead">
+        <string>
+        </string>
+    </key>
+    <key name="NullStringWrite">
+        <string>
+        </string>
+    </key>
+    <settings name="dexplore">
+        <key name="ImportBatchSize">
+            <int32>
+            </int32>
+        </key>
+        <key name="NumberRowsPreviewed">
+            <int32>
+            </int32>
+        </key>
+    </settings>
+</settings>

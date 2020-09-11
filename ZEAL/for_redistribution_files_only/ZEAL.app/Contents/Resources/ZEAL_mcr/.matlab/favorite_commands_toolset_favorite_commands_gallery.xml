@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolset id="favorite_commands_toolset" template="true">
+   <tool id="favorite_commands_gallery" quick_access_eligible="false" toolset_id="favorite_commands_toolset" type="gallery">
+      <child_tool id="default_category" toolset_id="favorite_commands_toolset"/>
+      <child_tool id="examples" toolset_id="user_favorite_commands_toolset"/>
+   </tool>
+   <tool id="default_category" quick_access_eligible="false" toolset_id="favorite_commands_toolset" type="group">
+      <child_tool id="1ae6aa3b-1336-403a-a3df-a82e8dd94695" toolset_id="user_favorite_commands_toolset"/>
+   </tool>
+   <toolset id="user_favorite_commands_toolset" template="true">
+      <tool id="goto_user_example" toolset_id="user_favorite_commands_toolset"/>
+      <tool id="clear_example" toolset_id="user_favorite_commands_toolset"/>
+      <tool id="examples" quick_access_eligible="false" toolset_id="user_favorite_commands_toolset" type="group">
+         <child_tool id="about_example" toolset_id="user_favorite_commands_toolset"/>
+         <child_tool id="clear_example" toolset_id="user_favorite_commands_toolset"/>
+         <child_tool id="goto_user_example" toolset_id="user_favorite_commands_toolset"/>
+         <child_tool id="logo_example" toolset_id="user_favorite_commands_toolset"/>
+      </tool>
+      <tool id="1ae6aa3b-1336-403a-a3df-a82e8dd94695" toolset_id="user_favorite_commands_toolset"/>
+      <tool id="logo_example" toolset_id="user_favorite_commands_toolset"/>
+      <tool id="about_example" toolset_id="user_favorite_commands_toolset"/>
+   </toolset>
+</toolset>

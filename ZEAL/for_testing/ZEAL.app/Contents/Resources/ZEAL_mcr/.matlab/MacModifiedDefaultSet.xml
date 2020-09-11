@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomKeySet derivedfrom="Mac" modifieddefault="true">
+   <Context id="Global">
+      <Action id="comment">
+         <Stroke code="VK_R" meta="on" sysctrl="on"/>
+      </Action>
+      <Action id="refresh"/>
+   </Context>
+</CustomKeySet>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html style="height:100%; width:100%">
+<head>
+<meta charset="utf-8">
+<title>JSmol HTML5</title>
+
+<script type="text/javascript" src="JSmol.min.js"></script>
+<script type="text/javascript" src="JSmol.GLmol.min.js"></script>
+<script type="text/javascript">
+var jmolApplet0; // set up in HTML table, below
+var s = document.location.search;
+Jmol._debugCode = (s.indexOf("debugcode") >= 0);
+
+var Info = {
+    width: "100%",
+    height: "100%",
+    debug: false,
+    color: "0xFFFFFF",
+    addSelectionOptions: false,
+    use: "WEBGL HTML5",
+    j2sPath: "j2s",
+    script: "set antialiasDisplay; set zoomLarge false; background {0.94, 0.94, 0.94};",
+    disableJ2SLoadMonitor: false,
+    disableInitialConsole: false,
+    allowJavaScript: true
+}
+
+$(document).ready(function() {
+
+    $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info));
+
+});
+
+
+function setup(htmlComponent) {
+
+     console.log("Setup called:", htmlComponent);
+
+     // Get the initial 'Data' value from MATLAB
+	 var initialData = htmlComponent.Data;
+                        
+     //console.log("Initial MATLAB Data", initialData);           
+            
+     window.pdbFormatData = initialData.pdb;
+     
+     Jmol.script(jmolApplet0, "pdbdata = javascript('window.pdbFormatData'); load var pdbdata;");
+    
+};
+        
+var lastPrompt=0;
+
+</script>
+</head>
+<body style="height:100%; width:100%">
+<div id="appdiv" style="width:100%;height:98%;"></div>
+</body>
+</html>
